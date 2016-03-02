@@ -1,0 +1,54 @@
+.intro-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #fff;
+}
+
+.about-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #eee;
+}
+
+.services-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #fff;
+}
+
+.contact-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #eee;
+}
+
+@media(min-width:767px) {
+    .server-status{
+        font-size: 20pt;
+        transition: max-height 1.5s ease-in-out;
+        transition-delay: 1s;
+    }
+
+    .show-div{
+        opacity: 1 !important;
+        height: 300px !important;
+        max-height: 300px !important;
+        background-color: #5e5e5e;
+    }
+}
+
+.server-status{
+    top: 120px;
+    overflow: hidden;
+    max-height: 0;
+    height: 0;
+    position: fixed;
+    margin: 20px;
+    padding: 20px;
+    transition: max-height 1s;
+    transition-delay: 2s;
+}

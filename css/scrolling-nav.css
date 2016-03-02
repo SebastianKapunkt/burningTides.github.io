@@ -14,47 +14,66 @@ html {
     height: 100%;
 }
 
-@media(min-width:767px) {
+div {
+    border: 0 solid red;
+}
+
+@media (min-width: 767px) {
     .navbar {
-        padding: 20px 0;
-        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        transition: background .5s ease-in-out,padding .5s ease-in-out;
+        height: 100%;
+        padding: 40px 0;
+        -webkit-transition: background .5s ease-in, padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in, padding .5s ease-in-out;
+        transition: background .5s ease-in, padding .5s ease-in-out;
     }
 
     .top-nav-collapse {
         padding: 0;
     }
+
+    .felcraft-moving {
+        height: 500px;
+        max-height: 500px;
+        transition: max-height 1.5s ease-in-out, font 2s;
+        transition-delay: 1s;
+    }
+
+    .decrease-div, .decrease-div > .navbar-brand {
+        max-height: 0;
+        font-size: 20pt;
+        transition: max-height 1.25s ease-out, font 2s;
+    }
+
+    .top-nav-collapse {
+        height: 50px;
+        margin: 10px;
+    }
+
+    .navbar-nav {
+        font-size: 15pt;
+    }
+
+    .navbar-brand {
+        font-size: 50pt;
+        -webkit-transition: font 2s;
+        -moz-transition: font 2s;
+        -ms-transition: font 2s;
+        -o-transition: font 2s;
+        transition: font 2s;
+        transition-delay: 1s;
+    }
 }
 
-/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
-The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
-of those sections to manage the look and feel of the site. */
-
-.intro-section {
-    height: 100%;
-    padding-top: 150px;
-    text-align: center;
-    background: #fff;
+.navbar {
+    -webkit-transition: height 1.5s ease-in-out, padding 1s ease-in-out; /* Safari */
+    transition: height 1.5s ease-in-out, padding 1s ease-in-out;
+    background-color: #444444;
+    color: white !important;
 }
 
-.about-section {
-    height: 100%;
-    padding-top: 150px;
-    text-align: center;
-    background: #eee;
+.navbar li:hover{
+    border-bottom: 2px solid #a8ff22;
 }
 
-.services-section {
-    height: 100%;
-    padding-top: 150px;
-    text-align: center;
-    background: #fff;
-}
 
-.contact-section {
-    height: 100%;
-    padding-top: 150px;
-    text-align: center;
-    background: #eee;
-}
+
