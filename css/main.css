@@ -30,6 +30,19 @@ hr {
     border-color: #444444;
 }
 
+div::-webkit-scrollbar {
+    width: 1em;
+}
+
+div::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+div::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3);
+    outline: 1px solid rgba(0, 0, 0, 0.3);
+}
+
 .colorBar {
     top: 10px;
     position: relative;
