@@ -53,6 +53,11 @@
     background-color: #444444;
 }
 
+.navbar > .container{
+    margin-left: 4% !important;
+    margin-right: 0 !important;
+}
+
 .navbar-brand{
     text-transform: uppercase;
     font-weight: 100;
