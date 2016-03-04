@@ -1,13 +1,15 @@
 //jQuery to collapse the navbar on scroll
 $(window).scroll(function() {
-    if ($(".navbar").offset().top > 350) {
+    if ($(".navbar").offset().top > 450) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
         $(".felcraft-moving").addClass("decrease-div");
-        $(".server-status").removeClass("show-div");
+        $(".navbar-content").removeClass("show-div");
+        $(".navbar-link").addClass("navbar-link-scrolled").removeClass("navbar-link-top");
     } else{
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
         $(".felcraft-moving").removeClass("decrease-div");
-        $(".server-status").addClass("show-div");
+        $(".navbar-content").addClass("show-div");
+        $(".navbar-link").removeClass("navbar-link-scrolled").addClass("navbar-link-top");
     }
 });
 
