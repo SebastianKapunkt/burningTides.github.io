@@ -72,9 +72,8 @@ div::-webkit-scrollbar-thumb {
 }
 
 .server-status{
-    padding: 50px;
-    width: 350px;
     text-align: left;
+    padding: 50px;
 }
 
 .server-news{
