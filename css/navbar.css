@@ -10,7 +10,7 @@
 .fel-navbar {
     font-size: 20pt;
     transition: all 1s ease-in-out;
-    font-weight: 100;
+    font-weight: 500;
 }
 
 .fel-navbar > div{
@@ -46,6 +46,7 @@
 }
 
 .nav-scrolled-top .fel-navbar {
+    font-weight: 100;
     position: fixed;
     font-size: 40pt;
     bottom: 6%;
