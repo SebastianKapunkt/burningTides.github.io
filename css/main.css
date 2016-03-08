@@ -101,7 +101,9 @@ div::-webkit-scrollbar-thumb {
 .dashboard-container{
     background: rgba(50,50,50,0.6);
     padding: 0 0 50px 0;
+    margin: auto;
     min-height: 100%;
+    width: 90%;
 }
 
 .howtoplay-section {
