@@ -4,6 +4,7 @@ body {
     font-family: 'Raleway', sans-serif;
     color: black;
     z-index: 2;
+    overflow: scroll;
 }
 
 html {
@@ -97,7 +98,7 @@ div::-webkit-scrollbar-thumb {
     padding: 130px 0 200px 0;
     min-height: 100%;
     text-align: center;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.6);
 }
 .dashboard-container{
     background: rgba(50,50,50,0.6);
@@ -105,6 +106,7 @@ div::-webkit-scrollbar-thumb {
     margin: auto;
     min-height: 100%;
     width: 80%;
+    border: 1px solid rgba(255,255,255,0.1);
 }
 
 .howtoplay-section {
