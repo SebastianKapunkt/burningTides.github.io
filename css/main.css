@@ -116,7 +116,7 @@ div::-webkit-scrollbar-thumb {
     height: 100%;
     padding-top: 90px;
     text-align: center;
-    background: rgba(70,70,70,0.7);
+    background: rgba(20,20,20,0.7);
 }
 
 .media-section {
@@ -131,7 +131,7 @@ div::-webkit-scrollbar-thumb {
     height: 100%;
     padding-top: 90px;
     text-align: center;
-    background: rgba(70,70,70,0.7);
+    background: rgba(20,20,20,0.7);
 }
 
 .team-section {
