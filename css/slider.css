@@ -1,8 +1,9 @@
 .carousel{
-    min-height: 400px;
+    height: 100%;
 }
 .carousel .item{
     padding: 20px;
+    height: 100%;
     margin: 0 auto; /* Align slide image horizontally center */
 }
 
@@ -13,7 +14,7 @@
 
 .slider {
     margin: 20px;
-    height: 100%;
+    height: 420px;
 }
 .carousel-control{
     background: none;
