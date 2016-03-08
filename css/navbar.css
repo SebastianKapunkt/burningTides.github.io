@@ -1,0 +1,58 @@
+.navbar-container{
+    background: rgba(0,0,0,0.9  );
+    border: none;
+    left: 3%;
+    right: 3%;
+    position: fixed;
+    z-index: 1000;
+}
+
+.fel-navbar {
+    font-size: 20pt;
+    transition: all 1s ease-in-out;
+    font-weight: 100;
+}
+
+.fel-navbar > div{
+    display: inline-block;
+    border: none;
+}
+
+.fel-navbar > div > a{
+    padding: 10px;
+}
+
+.fel-title{
+    color: #00E676;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 31pt;
+    padding: 0 20px 0 20px;
+    background: none;
+    float: left;
+    transition: all 1s ease-in-out;
+}
+
+.nav-scrolled-top{
+    background: none;
+}
+
+.nav-scrolled-top .fel-title{
+    font-size: 60pt;
+    left: 10%;
+    position: fixed;
+    background: none;
+    transition: all 1s ease-in-out;
+}
+
+.nav-scrolled-top .fel-navbar {
+    position: fixed;
+    font-size: 40pt;
+    bottom: 6%;
+    left: 10%;
+    transition: all 1s ease-in-out;
+}
+
+.nav-scrolled-top .mylink a{
+    color: white;
+}

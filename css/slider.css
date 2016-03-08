@@ -1,0 +1,22 @@
+.carousel{
+    margin-top: 20px;
+    height: 400px;
+}
+.carousel .item{
+    padding-top: 50px;
+    margin: 0 auto; /* Align slide image horizontally center */
+}
+.slider {
+    margin: 20px;
+}
+.carousel-control{
+    background: none;
+}
+
+.carousel-indicators{
+    bottom: -40px;
+}
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none;
+}

@@ -2,7 +2,8 @@ body {
     width: 100%;
     height: 100%;
     font-family: 'Raleway', sans-serif;
-    overflow: hidden;
+    color: black;
+    z-index: 2;
 }
 
 html {
@@ -14,15 +15,19 @@ div {
     border: 0 solid red;
 }
 
-a{
-    text-decoration: none !important;
-    color: white !important;
+a, a:hover, a:focus, a:active{
+    text-decoration: none;
+    color: white;
 }
 
-a:hover, a:focus, a:active {
-    text-decoration: none !important;
-    color: white !important;
-    background-color: rgba(0,230,118, 0.5);
+.mylink a{
+    color: #00E676;
+}
+
+.mylink a:hover,.mylink a:active {
+    text-decoration: none;
+    color: #00E676;
+    background-color: rgba(0,230,118,0.5);
 }
 
 hr {
@@ -43,6 +48,35 @@ div::-webkit-scrollbar-thumb {
     outline: 1px solid rgba(0, 0, 0, 0.3);
 }
 
+.background-image{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-image: url("../assets/navbar-background.jpg");
+    background-size: cover;
+    z-index: -1;
+    top: 0;
+    -webkit-filter: blur(2px);
+}
+
+.extra-links{
+    position: absolute;
+    right: 12%;
+    top: 2%;
+}
+.extra-links a{
+    padding: 10px;
+    color: white;
+}
+
+.server-status{
+
+}
+
+.server-news{
+
+}
+
 .colorBar {
     top: 10px;
     position: relative;
@@ -57,39 +91,47 @@ div::-webkit-scrollbar-thumb {
 }
 
 
-.intro-section {
-    height: 100%;
-    padding-top: 150px;
+.dashboard-section {
+    color: white;
+    padding: 130px 0 200px 0;
+    min-height: 100%;
     text-align: center;
-    background: #fff;
+    background: rgba(0,0,0,0.5);
+}
+.dashboard-container{
+    background: rgba(50,50,50,0.6);
+    padding: 0 0 50px 0;
+    min-height: 100%;
 }
 
 .howtoplay-section {
     height: 100%;
     padding-top: 150px;
     text-align: center;
-    background: #fff;
+    background: rgba(255,255,255,0.7);
 }
 
 .media-section {
     height: 100%;
     padding-top: 150px;
     text-align: center;
-    background: #fff;
+    color: white;
+    background: rgba(0,0,0,0.7);
 }
 
 .features-section {
     height: 100%;
     padding-top: 150px;
     text-align: center;
-    background: #fff;
+    background: rgba(255,255,255,0.7);
 }
 
 .team-section {
     height: 100%;
     padding-top: 150px;
     text-align: center;
-    background: #fff;
+    color: white;
+    background: rgba(0,0,0,0.7);
 }
 
 .text-color-green {
@@ -97,67 +139,6 @@ div::-webkit-scrollbar-thumb {
 }
 
 .text-color-red{
-
+    color: #c9302c;
 }
 
-@media (min-width: 767px) {
-    .navbar-content {
-        font-size: 18pt;
-        opacity: 0;
-        transition: max-height 1.5s ease-in-out 1s, padding 1.5s ease 1s;
-    }
-
-    .show-div {
-        opacity: 1 !important;
-        height: 500px !important;
-        max-height: 500px !important;
-        overflow: hidden !important;
-    }
-
-}
-
-@media (min-width: 1200px) {
-    .server-status {
-        right: 20px;
-    }
-}
-
-@media (max-width: 1199px) {
-    .server-status {
-        margin-bottom: 20px;
-    }
-}
-
-.navbar-content {
-    top: 39px;
-    overflow: hidden;
-    max-height: 0;
-    height: 0;
-    width: 80%;
-    padding: 0 21px 0 35px;
-    position: absolute;
-    transition: max-height 1s, padding 1s ease;
-    transition-delay: 2s;
-}
-
-.server-news, .server-status {
-    font-weight: 500;
-    height: 100%;
-    font-size: 13pt;
-    background-color: rgba(0, 0, 0, 0.3);
-    overflow: scroll;
-    padding-bottom: 100px;
-}
-
-.navbar-content-links{
-    font-weight: 100;
-    font-size: 15pt;
-    height: 27px;
-    margin-bottom: 70px;
-    border: 0 solid red;
-    background-color: rgba(0, 0, 0, 0.3);
-}
-.navbar-content-links a{
-    padding: 0 10px 0 10px;
-    margin-left: 10px;
-}
