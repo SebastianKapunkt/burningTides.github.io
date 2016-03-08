@@ -18,6 +18,7 @@ div {
 a, a:hover, a:focus, a:active{
     text-decoration: none;
     color: white;
+    transition: background-color 0.1s;
 }
 
 .mylink a{
@@ -28,6 +29,7 @@ a, a:hover, a:focus, a:active{
     text-decoration: none;
     color: #00E676;
     background-color: rgba(0,230,118,0.5);
+    transition: background-color 0.1s;
 }
 
 hr {
@@ -56,7 +58,6 @@ div::-webkit-scrollbar-thumb {
     background-size: cover;
     z-index: -1;
     top: 0;
-    -webkit-filter: blur(2px);
 }
 
 .extra-links{
