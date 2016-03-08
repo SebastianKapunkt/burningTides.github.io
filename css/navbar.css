@@ -49,7 +49,7 @@
     font-weight: 100;
     position: fixed;
     font-size: 40pt;
-    bottom: 6%;
+    bottom: 30px;
     left: 10%;
     transition: all 1s ease-in-out;
 }
