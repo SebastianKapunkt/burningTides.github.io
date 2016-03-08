@@ -114,14 +114,14 @@ div::-webkit-scrollbar-thumb {
 
 .howtoplay-section {
     height: 100%;
-    padding-top: 150px;
+    padding-top: 90px;
     text-align: center;
     background: rgba(70,70,70,0.7);
 }
 
 .media-section {
     height: 100%;
-    padding-top: 150px;
+    padding-top: 90px;
     text-align: center;
     color: white;
     background: rgba(0,0,0,0.7);
@@ -129,14 +129,14 @@ div::-webkit-scrollbar-thumb {
 
 .features-section {
     height: 100%;
-    padding-top: 150px;
+    padding-top: 90px;
     text-align: center;
     background: rgba(70,70,70,0.7);
 }
 
 .team-section {
     height: 100%;
-    padding-top: 150px;
+    padding-top: 90px;
     text-align: center;
     color: white;
     background: rgba(0,0,0,0.7);
