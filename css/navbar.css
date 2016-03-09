@@ -23,6 +23,7 @@
 }
 
 .fel-title{
+    font-family: SignPainter;
     text-transform: uppercase;
     font-weight: 200;
     font-size: 0;
@@ -43,7 +44,7 @@
 }
 
 .nav-scrolled-top .fel-title{
-    font-size: 60pt;
+    font-size: 70pt;
     left: 10%;
     position: fixed;
     background: none;

@@ -18,7 +18,7 @@ div {
 
 a, a:hover, a:focus, a:active{
     text-decoration: none;
-    color: #CAFF70;
+    color: white;
     transition: background-color 0.1s;
 }
 
