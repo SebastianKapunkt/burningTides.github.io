@@ -26,11 +26,17 @@
     color: #00E676;
     text-transform: uppercase;
     font-weight: 100;
-    font-size: 31pt;
+    font-size: 0;
     padding: 0 20px 0 20px;
     background: none;
     float: left;
     transition: all 1s ease-in-out;
+}
+
+.logo{
+    width: 60px;
+    padding: 5px;
+    transition: all 1s;
 }
 
 .nav-scrolled-top{
@@ -52,6 +58,13 @@
     bottom: 30px;
     left: 10%;
     transition: all 1s ease-in-out;
+}
+
+.nav-scrolled-top .logo{
+    width: 100px;
+    transition: all 1s;
+    margin-right: 20px;
+    margin-top: -12px;
 }
 
 .nav-scrolled-top .mylink a{
