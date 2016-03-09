@@ -98,35 +98,35 @@ div::-webkit-scrollbar-thumb {
     margin: auto;
     height: 110%;
     width: 80%;
-    border: 1px solid rgba(255,255,255,0.1);
+    border: 1px solid rgba(20,20,20,1);
 }
 
 .howtoplay-section {
     height: 100%;
     padding-top: 90px;
     text-align: center;
-    background: rgba(20,20,20,0.7);
+    background: rgba(20,20,20,1);
 }
 
 .media-section {
     height: 100%;
     padding-top: 90px;
     text-align: center;
-    background: rgba(0,0,0,0.7);
+    background: rgba(20,20,20,1);
 }
 
 .features-section {
     height: 100%;
     padding-top: 90px;
     text-align: center;
-    background: rgba(20,20,20,0.7);
+    background: rgba(20,20,20,1);
 }
 
 .team-section {
     height: 100%;
     padding-top: 90px;
     text-align: center;
-    background: rgba(0,0,0,0.7);
+    background: rgba(20,20,20,1);
 }
 
 .text-color-green {

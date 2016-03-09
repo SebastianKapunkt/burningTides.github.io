@@ -1,5 +1,6 @@
 .carousel{
-    min-height: 400px;
+    min-height: 420px;
+    border: 1px solid rgba(60,60,60,1);
 }
 .carousel .item{
     padding: 20px;
@@ -20,7 +21,7 @@
 }
 
 .carousel-indicators{
-    bottom: -25px;
+    bottom: -8px;
 }
 
 .carousel-control.left, .carousel-control.right {
