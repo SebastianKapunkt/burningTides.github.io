@@ -10,7 +10,7 @@
 .fel-navbar {
     font-size: 20pt;
     transition: all 1s ease-in-out;
-    font-weight: 500;
+    font-weight: 100;
 }
 
 .fel-navbar > div{

@@ -18,13 +18,13 @@ div {
 
 a, a:hover, a:focus, a:active{
     text-decoration: none;
-    color: 	#40E0D0;
+    color: #CAFF70;
     transition: background-color 0.1s;
 }
 
 .mylink a:hover,.mylink a:active {
     text-decoration: none;
-    background-color: rgba(15, 221, 175, 0.5);
+    background-color: rgba(202, 255, 112, 0.5);
     transition: background-color 0.1s;
 }
 
