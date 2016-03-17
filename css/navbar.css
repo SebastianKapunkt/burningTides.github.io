@@ -40,6 +40,12 @@
     justify-content: flex-start;
 }
 
+@media all and (max-width: 1450px) {
+    .nav-scrolled-top .fel-navbar{
+        font-size: 20pt !important;
+    }
+}
+
 /* Medium screens */
 @media all and (min-width: 960px) {
     .nav-scrolled-top{
