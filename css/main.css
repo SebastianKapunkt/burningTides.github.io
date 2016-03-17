@@ -62,7 +62,7 @@ div::-webkit-scrollbar-thumb {
 .extra-links{
     position: absolute;
     right: 10%;
-    top: 55px;
+    top: 70px;
 }
 .extra-links a{
     padding: 10px;
@@ -72,24 +72,28 @@ div::-webkit-scrollbar-thumb {
     padding-top: 90px;
     text-align: center;
     background: rgba(20,20,20,1);
+    height: 100%;
 }
 
 .media-section {
     padding-top: 90px;
     text-align: center;
     background: rgba(20,20,20,1);
+    height: 100%;
 }
 
 .features-section {
     padding-top: 90px;
     text-align: center;
     background: rgba(20,20,20,1);
+    height: 100%;
 }
 
 .team-section {
     padding-top: 90px;
     text-align: center;
     background: rgba(20,20,20,1);
+    height: 100%;
 }
 
 .text-color-green {
@@ -99,4 +103,3 @@ div::-webkit-scrollbar-thumb {
 .text-color-red{
     color: #c9302c;
 }
-

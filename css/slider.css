@@ -3,7 +3,6 @@
 }
 
 #banner-fade{
-    background: rgba(70,70,70,0.4);
     margin: auto;
 }
 
@@ -12,10 +11,9 @@
 }
 
 .bjqs-prev a, .bjqs-next a{
-    background: transparent;
+    background: rgba(0,0,0,0.2);
     font-size: 9pt;
     padding: 15px;
-    margin: -20px;
     transition: all 0.2s;
 }
 

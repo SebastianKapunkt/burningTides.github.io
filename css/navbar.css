@@ -5,6 +5,7 @@
     z-index: 1000;
     width: 100%;
     display: flex;
+    flex-flow: row nowrap;
 }
 
 .fel-navbar a{
@@ -15,16 +16,15 @@
     text-transform: uppercase;
     font-weight: 200;
     font-size: 0;
-    top: 20px;
-    padding: 0 20px 0 20px;
+    padding: 5px 20px 0 20px;
     background: none;
-    transition: all 1s ease-in-out;
     margin: auto;
+    transition: all 1s;
 }
 
 .logo{
     width: 40px;
-    transition: all 1s; 
+    transition: all 1s;
 }
 
 /* Large */
@@ -34,15 +34,49 @@
 
     transition: all 1s ease-in-out;
 
-    flex-grow: 40;
+    flex-grow: 100;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
 }
 
 /* Medium screens */
-@media all and (max-width: 800px) {
+@media all and (min-width: 960px) {
+    .nav-scrolled-top{
+        background: none;
+    }
 
+    .nav-scrolled-top .fel-title{
+        display: flex;
+        position: fixed;
+        left: 10%;
+        transition: all 1s;
+    }
+
+    .nav-scrolled-top .fel-title div{
+        font-size: 50pt;
+        padding-right: 20px;
+        margin: auto;
+        background: none;
+        transition: all 1s;
+    }
+
+    .nav-scrolled-top .fel-navbar {
+        font-weight: 100;
+        position: fixed;
+        font-size: 40pt;
+        bottom: 30px;
+        left: 10%;
+        transition: all 1s;
+        display: flex;
+        flex-shrink: 0;
+    }
+
+    .nav-scrolled-top .logo{
+        width: 80px;
+        padding-top: 20px;
+        transition: all 1s;
+    }
 }
 
 /* Small screens */
@@ -58,25 +92,4 @@
 
 
 
-.nav-scrolled-top{
-    background: none;
-}
 
-.nav-scrolled-top .fel-title{
-    font-size: 50pt;
-    background: none;
-    transition: all 1s ease-in-out;
-}
-
-.nav-scrolled-top .fel-navbar {
-    font-weight: 100;
-    position: fixed;
-    font-size: 40pt;
-    bottom: 30px;
-    left: 10%;
-    transition: all 1s ease-in-out;
-}
-
-.nav-scrolled-top .logo{
-    transition: all 1s;
-}

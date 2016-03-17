@@ -3,10 +3,8 @@
  */
 jQuery(document).ready(function($) {
     $('#banner-fade').bjqs({
-        'height' : 520,
-        'width' : 1000,
+        'height' : 550,
+        'width' : 600,
         'responsive' : true,
-        nexttext : 'Prev',
-        prevtext : 'Next'
     });
 });
