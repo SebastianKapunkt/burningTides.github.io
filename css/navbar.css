@@ -1,24 +1,13 @@
 .navbar-container{
-    background: rgba(0,0,0,0.9);
+    background: rgba(0,0,0,1);
     border: none;
-    left: 3%;
-    right: 3%;
     position: fixed;
     z-index: 1000;
+    width: 100%;
+    display: flex;
 }
 
-.fel-navbar {
-    font-size: 20pt;
-    transition: all 1s ease-in-out;
-    font-weight: 300;
-}
-
-.fel-navbar > div{
-    display: inline-block;
-    border: none;
-}
-
-.fel-navbar > div > a{
+.fel-navbar a{
     padding: 10px;
 }
 
@@ -26,18 +15,48 @@
     text-transform: uppercase;
     font-weight: 200;
     font-size: 0;
-    top: 10px;
+    top: 20px;
     padding: 0 20px 0 20px;
     background: none;
-    float: left;
     transition: all 1s ease-in-out;
+    margin: auto;
 }
 
 .logo{
-    width: 60px;
-    padding: 5px;
-    transition: all 1s;
+    width: 40px;
+    transition: all 1s; 
 }
+
+/* Large */
+.fel-navbar {
+    font-size: 20pt;
+    font-weight: 300;
+
+    transition: all 1s ease-in-out;
+
+    flex-grow: 40;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+/* Medium screens */
+@media all and (max-width: 800px) {
+
+}
+
+/* Small screens */
+@media all and (max-width: 500px) {
+    .fel-navbar {
+        /* On small screens, we are no longer using row direction but column */
+        flex-direction: column;
+    }
+}
+
+
+
+
+
 
 .nav-scrolled-top{
     background: none;
@@ -45,8 +64,6 @@
 
 .nav-scrolled-top .fel-title{
     font-size: 50pt;
-    left: 10%;
-    position: fixed;
     background: none;
     transition: all 1s ease-in-out;
 }
@@ -61,11 +78,5 @@
 }
 
 .nav-scrolled-top .logo{
-    width: 100px;
     transition: all 1s;
-    margin-right: 20px;
-    margin-top: -12px;
-}
-
-.nav-scrolled-top .mylink a{
 }

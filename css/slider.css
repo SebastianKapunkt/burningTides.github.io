@@ -1,29 +1,44 @@
-.carousel{
-    min-height: 420px;
-    border: 1px solid rgba(60,60,60,1);
-}
-.carousel .item{
-    padding: 20px;
-    margin: 0 auto; /* Align slide image horizontally center */
+.server-news{
+    padding: 0 0 40px 0;
 }
 
-.carousel .item:hover{
-    background-color: rgba(0,0,0,0.1);
-    cursor: pointer;
+#banner-fade{
+    background: rgba(70,70,70,0.4);
+    margin: auto;
 }
 
-.slider {
-    margin: 20px;
-    height: 100%;
-}
-.carousel-control{
-    background: none;
+.bjqs li{
+    overflow: scroll;
 }
 
-.carousel-indicators{
-    bottom: -8px;
+.bjqs-prev a, .bjqs-next a{
+    background: transparent;
+    font-size: 9pt;
+    padding: 15px;
+    margin: -20px;
+    transition: all 0.2s;
 }
 
-.carousel-control.left, .carousel-control.right {
-    background-image: none;
+.bjqs-prev a:hover, .bjqs-next a:hover{
+    background: black;
+    font-size: 15pt;
+    transition: all 0.2s;
 }
+
+.bjqs-prev .bjqs-next{
+    bottom: 0;
+}
+
+
+.bjqs-markers a{
+    padding: 5px 10px;
+    background: #000;
+    color: #fff;
+    margin: 5px;
+    text-decoration: none;
+}
+
+ol.bjqs-markers li.active-marker a, ol.bjqs-markers li a:hover{
+    background: #333;
+}
+

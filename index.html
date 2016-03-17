@@ -11,9 +11,6 @@
 
     <title>Felcraft</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
     <!-- hover.cc -->
     <link href="css/hover.css" rel="stylesheet">
 
@@ -22,9 +19,11 @@
 
     <!-- Dashboard CSS -->
     <link href="css/navbar.css" rel="stylesheet">
+    <link href="css/dashbaord.css" rel="stylesheet">
 
     <!-- Slider CSS -->
     <link href="css/slider.css" rel="stylesheet">
+    <link href="css/bjqs.css" rel="stylesheet">
 
     <!-- Google font -->
     <link href='https://fonts.googleapis.com/css?family=Raleway:200' rel='stylesheet' type='text/css'>
@@ -39,28 +38,25 @@
 </head>
 <body>
 
-<div class="navbar-container nav-scrolled-top">
-    <div class="fel-title   ">
+<div class="navbar-container">
+    <div class="fel-title">
         <a class="page-scroll" href="#dashboard"><img src="assets/FC-logo.png" class="logo">Felcraft</a>
     </div>
-    <div class="mylink fel-navbar">
-        <div class="hidden">
-            <a class="page-scroll" href="#dashboard"></a>
-        </div>
+    <div class="fel-navbar mylink ">
         <div>
-            <a class="page-scroll navbar-link navbar-link-top hvr-underline-from-left"
+            <a class="page-scroll hvr-underline-from-left"
                href="#how2play">How2Play</a>
         </div>
         <div>
-            <a class="page-scroll navbar-link navbar-link-top hvr-underline-from-left"
+            <a class="page-scroll hvr-underline-from-left"
                href="#media">Dungeon-Roadmap</a>
         </div>
         <div>
-            <a class="page-scroll navbar-link navbar-link-top hvr-underline-from-left"
+            <a class="page-scrol hvr-underline-from-left"
                href="#features">Plan-TBC</a>
         </div>
         <div>
-            <a class="page-scroll navbar-link navbar-link-top hvr-underline-from-left"
+            <a class="page-scroll hvr-underline-from-left"
                href="#team">Team</a>
         </div>
     </div>
@@ -75,88 +71,76 @@
 </div>
 <!-- Dashboard Section -->
 <section id="dashboard" class="dashboard-section">
+    <div class="hidden">
+        <a class="page-scroll" href="#dashboard"></a>
+    </div>
     <div class="container custom-dashboard-container">
         <div class="server-news col-lg-8">
-            <div class="slider">
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                    <!-- Carousel indicators -->
-
-                    <!-- Wrapper for carousel items -->
-                    <div class="carousel-inner">
-                        <div class="item active">
+            <div id="banner-fade">
+                <ul class="bjqs">
+                    <li>
+                        <a>
                             <h1>Die Beta</h1>
                             Bald ist es soweit. Wir werden für euch die erste Closed-Beta starten.
                             <br>meldet euch an!<br>
                             <br>
                             <!-- Beta bild ka was -->
                             <img src="http://www.cinemablend.com/images/sections/68188/World_Of_Warcraft__Warlords_Of_Draenor_68188.jpg"
-                                 width="450px" class="center-block" alt="dark portal">
-                        </div>
-
-                        <div class="item">
-                            <a class="page-scroll" href="#media">
-                                <h1>Dungeon-Roadmap</h1>
-                                Schaut euch unsere Instanz-Roadmap an!
-                                <br>
-                                <!-- Map Screenshot mit Instanzen eingezeichnet -->
-                                <img src="http://wow.gamepressure.com/gfx/big_maps/map_of_outland.jpg"
-                                     width="250px" class="center-block" alt="roadmap">
-                            </a>
-                        </div>
-
-                        <div class="item">
+                                 width="550px" alt="dark portal">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#media">
+                            <h1>Dungeon-Roadmap</h1>
+                            Schaut euch unsere Instanz-Roadmap an!
+                            <br><br>
+                            <!-- Map Screenshot mit Instanzen eingezeichnet -->
+                            <img src="http://wow.gamepressure.com/gfx/big_maps/map_of_outland.jpg"
+                                 width="400px" class="center-block" alt="roadmap">
+                        </a>
+                    </li>
+                    <li>
+                        <a>
                             <h1>Plan-TBC</h1>
                             Schaut euch unseren Plan zum Server an!<br> Was? Wie? Wann?<br><br>
                             <!-- Gm Kleidung, Kreis, sitzen stehen bla -->
-                            <img src="http://www.playnation.de/uploads/inline/pic-19647.jpg" width="350px"
+                            <img src="http://www.playnation.de/uploads/inline/pic-19647.jpg" width="550px"
                                  class="center-block" alt="progress">
-                        </div>
-                    </div>
-                    <!-- Carousel controls -->
-                    <a class="carousel-control left" href="#myCarousel" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left"></span>
-                    </a>
-                    <a class="carousel-control right" href="#myCarousel" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                    </a>
-                    <ol class="carousel-indicators">
-                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#myCarousel" data-slide-to="1"></li>
-                        <li data-target="#myCarousel" data-slide-to="2"></li>
-                    </ol>
-                </div>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="col-lg-4 server-status center-block">
-            <div>
-                <h2 class="text-center">Server Status</h2>
-                <hr noshade="">
-                <div class="text-center"> SET REALMLIST felcraft.github.io</div>
-                <hr noshade="">
-                <div class="row">
-                    <div class="col-lg-6 text-uppercase">Server Time</div>
-                    <div class="col-lg-6 text-right">12:30 PM</div>
-                </div>
-                <hr noshade="">
-                <div class="row">
-                    <div class="col-lg-6">Login Server</div>
-                    <div class="col-lg-6 text-right text-color-green text-uppercase">online</div>
-                </div>
-                <hr noshade="">
-                <div class="row">
-                    <div class="col-lg-6 text-uppercase">Man'ari</div>
-                    <div class="col-lg-6 text-right text-color-green text-uppercase">online</div>
-                    <div class="col-lg-6 text-uppercase">Client</div>
-                    <div class="col-lg-6 text-right">2.4.3</div>
-                    <div class="col-lg-6 text-uppercase">Uptime</div>
-                    <div class="col-lg-6 text-right">22hours</div>
-                    <div class="col-lg-12 text-uppercase">513 Players online</div>
-                    <div class="col-lg-12">
-                        <div class="colorBar"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!-- <div class="col-lg-4 server-status center-block">
+             <div>
+                 <h2 class="text-center">Server Status</h2>
+                 <hr noshade="">
+                 <div class="text-center"> SET REALMLIST felcraft.github.io</div>
+                 <hr noshade="">
+                 <div class="row">
+                     <div class="col-lg-6 text-uppercase">Server Time</div>
+                     <div class="col-lg-6 text-right">12:30 PM</div>
+                 </div>
+                 <hr noshade="">
+                 <div class="row">
+                     <div class="col-lg-6">Login Server</div>
+                     <div class="col-lg-6 text-right text-color-green text-uppercase">online</div>
+                 </div>
+                 <hr noshade="">
+                 <div class="row">
+                     <div class="col-lg-6 text-uppercase">Man'ari</div>
+                     <div class="col-lg-6 text-right text-color-green text-uppercase">online</div>
+                     <div class="col-lg-6 text-uppercase">Client</div>
+                     <div class="col-lg-6 text-right">2.4.3</div>
+                     <div class="col-lg-6 text-uppercase">Uptime</div>
+                     <div class="col-lg-6 text-right">22hours</div>
+                     <div class="col-lg-12 text-uppercase">513 Players online</div>
+                     <div class="col-lg-12">
+                         <div class="colorBar"></div>
+                     </div>
+                 </div>
+             </div>
+         </div>-->
     </div>
 </section>
 
@@ -205,14 +189,15 @@
 </section>
 
 <!-- jQuery -->
-<script src="js/jquery.js"></script>
-
-<!-- Bootstrap Core JavaScript -->
-<script src="js/bootstrap.min.js"></script>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
 
 <!-- Scrolling Nav JavaScript -->
-<script src="js/jquery.easing.min.js"></script>
+<script src="bower_components/jquery.easing/js/jquery.easing.min.js"></script>
 <script src="js/navbar.js"></script>
+
+<!-- Slider js -->
+<script src="js/bjqs-1.3.min.js"></script>
+<script src="js/slider.js"></script>
 
 </body>
 
