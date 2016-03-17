@@ -6,10 +6,6 @@
     margin: auto;
 }
 
-.bjqs li{
-    overflow: scroll;
-}
-
 .bjqs-prev a, .bjqs-next a{
     background: rgba(0,0,0,0.2);
     font-size: 9pt;
