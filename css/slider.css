@@ -7,15 +7,17 @@
 }
 
 .bjqs-prev a, .bjqs-next a{
-    background: rgba(0,0,0,0.2);
+    background: rgba(0,0,0,0.7);
     font-size: 9pt;
-    padding: 15px;
+    padding: 10px;
     transition: all 0.2s;
+    border-radius: 0;
 }
 
 .bjqs-prev a:hover, .bjqs-next a:hover{
     background: black;
     font-size: 15pt;
+    padding: 15px;
     transition: all 0.2s;
 }
 
