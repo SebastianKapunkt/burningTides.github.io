@@ -37,6 +37,15 @@
     flex-flow: row wrap;
 }
 
+.extra-links{
+    position: absolute;
+    right: 10%;
+    top: 70px;
+}
+.extra-links a{
+    padding: 10px;
+}
+
 @media all and (max-width: 1250px){
     .custom-dashboard-container{
         margin-top: 150px;
@@ -52,6 +61,7 @@
 @media all and (max-width: 705px) {
     .custom-dashboard-container{
         margin-top: 170px;
+        width: 100%;
     }
     .extra-links{
         top: 120px;
@@ -62,7 +72,6 @@
 @media all and (max-width: 500px) {
     .custom-dashboard-container{
         margin-top: 270px;
-        width: 100%;
     }
     .extra-links{
         top: 220px;
