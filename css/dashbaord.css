@@ -49,18 +49,9 @@
 }
 
 /* Small screens */
-@media all and (max-width: 705px) {
+@media all and (max-width: 768px) {
     .custom-dashboard-container {
         width: 100%;
-    }
-
-    .extra-links {
-    }
-}
-
-/* Small screens */
-@media all and (max-width: 500px) {
-    .custom-dashboard-container {
     }
 
     .extra-links {

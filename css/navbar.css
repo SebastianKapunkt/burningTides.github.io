@@ -40,6 +40,38 @@
     justify-content: flex-start;
 }
 
+#burger {
+    display: none;
+    right: 0;
+    top: 2px;
+    height: 50px;
+    width: 2em;
+    align-items: flex-end;
+    position: fixed;
+    cursor: pointer;
+}
+
+#burger div {
+    position: relative;
+    padding-left: 1.25em;
+}
+
+#burger div:before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -1.5em;
+    width: 1em;
+    height: 0.15em;
+    background: white;
+    box-shadow: 0 0.35em 0 0 white,
+    0 0.7em 0 0 white;
+}
+
+.collapsed-nav {
+    height: 230px !important;
+}
+
 @media all and (max-width: 1450px) {
     .nav-scrolled-top .fel-navbar {
         font-size: 20pt !important;
@@ -86,41 +118,18 @@
     }
 }
 
-#burger {
-    font-weight: 100;
-    display: none;
-    right: 10px;
-    position: fixed;
-    cursor: pointer;
-    z-index: 2000;
-    font-size: 2.1em;
-    width: 70%;
-    text-align: right;
-}
-
 /* Small screens */
-@media all and (max-width: 500px) {
+@media all and (max-width: 768px) {
     .fel-navbar {
         /* On small screens, we are no longer using row direction but column */
         overflow: hidden;
-        height: 0px;
+        height: 0;
         padding-top: 50px;
         flex-direction: column;
         flex-flow: column;
     }
 
     #burger {
-        display: block;
+        display: flex;
     }
 }
-
-.collapsed-nav {
-    height: 220px !important;
-}
-
-
-
-
-
-
-
