@@ -1,6 +1,6 @@
 var isClicked = false;
 
-//jQuery to collapse the navbar on scroll
+// show other navbar at scrolled top state
 $(window).scroll(function () {
     if ($(".navbar-container").offset().top > 150) {
         $(".navbar-container").removeClass("nav-scrolled-top");
@@ -16,12 +16,14 @@ $(function () {
         $('html, body').stop().animate({
             scrollTop: $($anchor.attr('href')).offset().top
         }, 1500, 'easeInOutExpo');
+        // also close burger menu
         event.preventDefault();
         $(".fel-navbar").removeClass("collapsed-nav");
         isClicked = false;
     });
 });
 
+// burger collapse, by adding and removing css class
 $(document).ready(function () {
     $('#burger').click(function (e) {
         if (!isClicked) {
