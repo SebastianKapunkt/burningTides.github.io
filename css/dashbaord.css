@@ -49,7 +49,7 @@
 }
 
 /* Small screens */
-@media all and (max-width: 768px) {
+@media all and (max-width: 959px) {
     .custom-dashboard-container {
         width: 100%;
     }
