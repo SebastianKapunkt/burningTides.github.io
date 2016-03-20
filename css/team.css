@@ -1,0 +1,34 @@
+.team-section h1{
+    margin-bottom: 90px;
+}
+
+.team-member{
+    background: rgba(90,90,90,0.1);
+    margin: 15px;
+    padding: 15px;
+}
+.team-member:hover{
+    background: rgba(120,120,120,0.3);
+}
+
+.member-image img{
+    border-radius: 200px;
+    padding: 10px;
+    width: 180px;
+    height: 180px;
+    background-position: center;
+}
+
+.member-name{
+    font-size: 20pt;
+    padding: 25px 10px 5px 10px;
+}
+
+.member-title{
+    padding: 0 10px 25px 10px;
+}
+
+.member-text{
+    width: 250px;
+    text-align: left;
+}
