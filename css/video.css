@@ -10,24 +10,16 @@
 
 .fullscreen-bg__video {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-@media (min-aspect-ratio: 16/9) {
-    .fullscreen-bg__video {
-        height: 300%;
-        top: -100%;
-    }
-}
-
-@media (max-aspect-ratio: 16/9) {
-    .fullscreen-bg__video {
-        width: 300%;
-        left: -100%;
-    }
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 @media (max-width: 767px) {
