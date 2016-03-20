@@ -1,5 +1,5 @@
-.navbar-container{
-    background: rgba(0,0,0,1);
+.navbar-container {
+    background: rgba(0, 0, 0, 1);
     border: none;
     position: fixed;
     z-index: 1000;
@@ -8,11 +8,11 @@
     flex-flow: row nowrap;
 }
 
-.fel-navbar a{
+.fel-navbar a {
     padding: 10px;
 }
 
-.fel-title{
+.fel-title {
     text-transform: uppercase;
     font-weight: 200;
     font-size: 0;
@@ -22,7 +22,7 @@
     transition: all 1s;
 }
 
-.logo{
+.logo {
     width: 40px;
     transition: all 1s;
 }
@@ -32,7 +32,7 @@
     font-size: 20pt;
     font-weight: 300;
 
-    transition: all 1s ease-in-out;
+    transition: all 0.8s ease-in-out;
 
     flex-grow: 100;
     display: flex;
@@ -41,25 +41,25 @@
 }
 
 @media all and (max-width: 1450px) {
-    .nav-scrolled-top .fel-navbar{
+    .nav-scrolled-top .fel-navbar {
         font-size: 20pt !important;
     }
 }
 
 /* Medium screens */
 @media all and (min-width: 960px) {
-    .nav-scrolled-top{
+    .nav-scrolled-top {
         background: none;
     }
 
-    .nav-scrolled-top .fel-title{
+    .nav-scrolled-top .fel-title {
         display: flex;
         position: fixed;
         left: 10%;
         transition: all 1s;
     }
 
-    .nav-scrolled-top .fel-title div{
+    .nav-scrolled-top .fel-title div {
         font-size: 50pt;
         padding-right: 20px;
         margin: auto;
@@ -76,22 +76,46 @@
         transition: all 1s;
         display: flex;
         flex-shrink: 0;
-        background: rgba(0,0,0,0.3);
+        background: rgba(0, 0, 0, 0.3);
     }
 
-    .nav-scrolled-top .logo{
+    .nav-scrolled-top .logo {
         width: 80px;
         padding-top: 20px;
         transition: all 1s;
     }
 }
 
+#burger {
+    font-weight: 100;
+    display: none;
+    right: 10px;
+    position: fixed;
+    cursor: pointer;
+    z-index: 2000;
+    font-size: 2.1em;
+    width: 70%;
+    text-align: right;
+}
+
 /* Small screens */
 @media all and (max-width: 500px) {
     .fel-navbar {
         /* On small screens, we are no longer using row direction but column */
+        overflow: hidden;
+        height: 0px;
+        padding-top: 50px;
         flex-direction: column;
+        flex-flow: column;
     }
+
+    #burger {
+        display: block;
+    }
+}
+
+.collapsed-nav {
+    height: 220px !important;
 }
 
 

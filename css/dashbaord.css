@@ -51,23 +51,19 @@
 /* Small screens */
 @media all and (max-width: 705px) {
     .custom-dashboard-container {
-        margin-top: 170px;
         width: 100%;
     }
 
     .extra-links {
-        top: 120px;
     }
 }
 
 /* Small screens */
 @media all and (max-width: 500px) {
     .custom-dashboard-container {
-        margin-top: 270px;
     }
 
     .extra-links {
-        top: 220px;
         right: 0;
     }
 }

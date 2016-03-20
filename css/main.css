@@ -91,10 +91,3 @@ h1{
     flex-flow: wrap;
     justify-content: center;
 }
-
-@media all and (max-width: 705px) {
-    #how2play h1, #media h1, #features h1, #team h1{
-        padding-top: -150px;
-        margin-top: 150px;
-    }
-}
