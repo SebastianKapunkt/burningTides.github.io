@@ -50,31 +50,31 @@ h1{
     left: 0;
 }
 
+.howtoplay-section, .media-section, .features-section, .team-section{
+    background: rgba(20, 20, 20, 1);
+}
+
 .howtoplay-section {
     padding-top: 90px;
     text-align: center;
-    background: rgba(20, 20, 20, 1);
     height: 100%;
 }
 
 .media-section {
     padding-top: 90px;
     text-align: center;
-    background: rgba(20, 20, 20, 1);
     height: 100%;
 }
 
 .features-section {
     padding-top: 90px;
     text-align: center;
-    background: rgba(20, 20, 20, 1);
     height: 100%;
 }
 
 .team-section {
     padding: 90px 0 200px 0;
     text-align: center;
-    background: rgba(20, 20, 20, 1);
     width: 100%;
 }
 
