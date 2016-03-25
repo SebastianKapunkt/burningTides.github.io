@@ -1,0 +1,37 @@
+@media all and (max-width: 979px) {
+    .dash-container{
+        width: 100%;
+        margin: 0;
+        padding: 90px 50px 90px 50px;
+    }
+
+    .news-section .container{
+        flex-flow: column;
+    }
+
+    .server-status{
+        margin-top: 50px;
+    }
+
+    .container{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .dash-title{
+        font-size: 3em;
+    }
+
+    .dash-content{
+        font-size: 15pt;
+    }
+
+    .dash-button{
+        font-size: 30pt;
+    }
+
+    .dash-footer{
+        font-size: 12pt;
+    }
+}

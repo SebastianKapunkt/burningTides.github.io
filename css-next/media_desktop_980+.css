@@ -1,0 +1,39 @@
+@media all and (min-width: 1200px) {
+    .nav-scrolled-top {
+        background: none;
+    }
+
+    .nav-scrolled-top .fel-navbar {
+        position: fixed;
+        right: 20px;
+        top: 250px;
+
+        font-size: 2em;
+        text-align: right;
+
+        display: flex;
+        flex-flow: column;
+        background: none;
+
+        transition: all 1s;
+    }
+    .nav-scrolled-top .arrow-up, .nav-scrolled-top .arrow-link{
+        display: none;
+        padding: 0;
+    }
+
+    .dashboard-section, .features-section, .road-section{
+        height: 100%;
+    }
+
+    .dash-container{
+        top: 50px;
+    }
+
+    .extra-links{
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        background: transparent;
+    }
+}

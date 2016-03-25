@@ -1,0 +1,51 @@
+.how2play-section .container{
+    padding-bottom: 40px;
+}
+.step{
+    display: flex;
+    flex-flow: column;
+    background: rgba(90,90,90,0.1);
+    padding: 20px;
+    width: 100%;
+    text-align: left;
+    margin: 5px;
+}
+
+.step-title{
+    font-size: 20pt;
+}
+
+.step-content{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    padding-top: 10px;
+}
+
+.step:hover{
+    background: rgba(120,120,120,0.2);
+}
+
+.step-element {
+    margin: 5px;
+    padding: 30px;
+    background: rgba(90,90,90,0.1);
+    font-size: 15pt;
+    text-align: center;
+}
+
+.step-element a{
+    color: greenyellow;
+}
+
+.step-element:hover{
+    background: rgba(120,120,120,0.3);
+}
+
+.step-element input{
+    margin-left: 20px;
+}
+
+.how2play-submit{
+    color: greenyellow;
+}

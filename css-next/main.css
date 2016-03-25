@@ -1,0 +1,101 @@
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    z-index: 2;
+    margin: 0;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+div {
+    border: 0 solid greenyellow;
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.1s;
+}
+
+.mylink a:hover, .mylink a:active {
+    text-decoration: none;
+    background-color: rgba(202, 255, 112, 0.5);
+    transition: background-color 0.1s;
+    color: greenyellow;
+}
+
+hr {
+    margin: 5px 0 5px 0;
+    border-color: #444444;
+}
+
+h1{
+    font-size: 30pt;
+}
+
+.background-image {
+    width: 100%;
+    position: fixed;
+    background-image: url("https://i.ytimg.com/vi/lKCzuS46fTM/maxresdefault.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transform: translateZ(-20px) scale(23);
+}
+
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+.how2play-section, .road-section, .news-section, .features-section, .team-section{
+    background: rgba(20, 20, 20, 1);
+    padding-top: 50px;
+}
+
+.how2play-section, .road-section, .news-section, .features-section{
+    border-bottom: 8px solid yellowgreen;
+}
+
+.how2play-section {
+    padding-top: 40px;
+    text-align: center;
+}
+
+.news-section {
+    text-align: center;
+}
+
+.road-section {
+    text-align: center;
+}
+
+.features-section {
+    text-align: center;
+}
+
+.team-section {
+    text-align: center;
+}
+
+.text-color-green {
+    color: rgb(0, 230, 118);
+}
+
+.text-color-red {
+    color: #c9302c;
+}
+
+.container{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    padding: 0 90px;
+}

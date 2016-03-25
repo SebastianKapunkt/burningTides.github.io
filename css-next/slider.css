@@ -1,0 +1,40 @@
+.server-news{
+    padding: 0 0 40px 0;
+}
+
+#banner-fade{
+    margin: auto;
+}
+
+.bjqs-prev a, .bjqs-next a{
+    background: rgba(0,0,0,0.7);
+    font-size: 9pt;
+    padding: 10px;
+    transition: all 0.2s;
+    border-radius: 0;
+}
+
+.bjqs-prev a:hover, .bjqs-next a:hover{
+    background: black;
+    font-size: 15pt;
+    padding: 15px;
+    transition: all 0.2s;
+}
+
+.bjqs-prev .bjqs-next{
+    bottom: 0;
+}
+
+
+.bjqs-markers a{
+    padding: 5px 10px;
+    background: #000;
+    color: #fff;
+    margin: 5px;
+    text-decoration: none;
+}
+
+ol.bjqs-markers li.active-marker a, ol.bjqs-markers li a:hover{
+    background: #333;
+}
+
