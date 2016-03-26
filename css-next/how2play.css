@@ -1,5 +1,7 @@
 .how2play-section .container{
     padding-bottom: 40px;
+    display: flex;
+    flex-flow: row wrap;
 }
 .step{
     display: flex;
@@ -31,7 +33,7 @@
     padding: 30px;
     background: rgba(90,90,90,0.1);
     font-size: 13pt;
-    text-align: center;
+    text-align: left;
 }
 
 .step-element a{
@@ -48,4 +50,13 @@
 
 .how2play-submit{
     color: greenyellow;
+}
+
+.step-container{
+    flex-grow: 2;
+    justify-content: flex-start;
+    display: flex;
+    flex-flow: column;
+    margin: 30px;
+    width: 400px;
 }
