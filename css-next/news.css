@@ -62,7 +62,7 @@
 }
 
 .news-title {
-    background: rgba(90,90,90, 0.1);
+    background: rgba(0,0,0, 0.5);
     font-size: 25pt;
     padding: 10px;
     margin-bottom: 5px;
@@ -70,7 +70,7 @@
 
 .news-content {
     padding: 10px;
-    background: rgba(90, 90, 90, 0.1);
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .news-item:nth-child(1) {

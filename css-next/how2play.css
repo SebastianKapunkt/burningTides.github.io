@@ -60,3 +60,9 @@
     flex-flow: column;
     margin: 15px;
 }
+
+.how2play-footer{
+    margin: auto;
+    text-align: center;
+    font-size: 20pt;
+}
