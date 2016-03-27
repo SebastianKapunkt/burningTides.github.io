@@ -1,43 +1,66 @@
 @media all and (max-width: 979px) {
-    .dash-container{
+    .container {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+    }
+
+    .dash-container {
         width: 100%;
         margin: 0;
         padding: 90px 0 90px 0;
     }
 
-    .news-section .container{
-        flex-flow: column;
-    }
-
-    .server-status{
-        margin: 50px 0 0 0;
-        padding: 0 !important;
-    }
-
-    .container{
-        width: 100%;
-        padding: 0;
-        margin: 0;
-    }
-
-    .dash-title{
+    .dash-title {
         font-size: 3em;
     }
 
-    .dash-content{
+    .dash-content {
         font-size: 15pt;
     }
 
-    .dash-button{
+    .dash-button {
         font-size: 30pt;
     }
 
-    .dash-footer{
+    .dash-footer {
         font-size: 12pt;
     }
 
-    .extra-links{
+    .extra-links {
         width: 100%;
         text-align: center;
+    }
+
+    .news-section .container {
+        flex-flow: column;
+    }
+
+    .server-news{
+        margin: auto;
+        width: auto;
+    }
+
+    .news-item {
+        margin: auto;
+        width: auto;
+    }
+
+    .how2play-section .container{
+        flex-flow: column;
+        flex-shrink: 0;
+    }
+
+    .step{
+        margin: 5px 0 5px 0;
+        width: auto;
+    }
+
+    .step-container{
+        width: auto;
     }
 }

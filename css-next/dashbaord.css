@@ -21,8 +21,8 @@
 
 .dash-button{
     font-size: 40pt;
-    background: rgba(202, 255, 112, 0.4);
-    color: yellowgreen;
+    background: rgba(202, 255, 112, 0.6);
+    color: white;
     padding: 30px;
     margin: 50px auto;
     width: fit-content;

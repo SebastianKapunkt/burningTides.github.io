@@ -1,22 +1,19 @@
-.news-section .container{
+.news-section .container {
     padding-top: 40px;
     padding-bottom: 40px;
-}
-.server-news {
-    flex-grow: 20;
+    flex-flow: row wrap;
 }
 
 .server-status {
-    margin: auto;
-    text-align: center;
     flex-grow: 1;
     height: 550px;
     width: 300px;
     display: flex;
     padding: 20px;
+    margin: 0 auto;
     flex-flow: column;
     justify-content: flex-start;
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(90, 90, 90, 0.1);
 }
 
 .server-status div {
@@ -43,4 +40,56 @@
     rgb(4, 156, 219) 50%,
     rgb(4, 156, 219) 100%) repeat scroll 50% 0px transparent;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25) inset;
+}
+
+.server-news {
+    flex-grow: 6;
+    width: 700px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin: 0 10px auto 0;
+}
+
+.news-item {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    text-align: left;
+    padding: 20px;
+    flex-basis: auto 200px;
+    background: rgba(90,90,90, 0.1);
+}
+
+.news-title {
+    background: rgba(90,90,90, 0.1);
+    font-size: 25pt;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.news-content {
+    padding: 10px;
+    background: rgba(90, 90, 90, 0.1);
+}
+
+.news-item:nth-child(1) {
+    background: url("http://www.cinemablend.com/images/sections/68188/World_Of_Warcraft__Warlords_Of_Draenor_68188.jpg");
+    background-size: cover;
+}
+
+.news-item:nth-child(2) {
+    background: url("http://bnetcmsus-a.akamaihd.net/cms/blog_header/HV06J8LNQYDA1310037803961.jpg");
+    background-size: cover;
+}
+
+.news-item:nth-child(3) {
+    background: url("http://img8.mmo.mmo4arab.com/wow/wow_sep/world_legion_s.jpg");
+    background-size: cover;
+}
+
+.news-item:nth-child(4) {
+    background: url("http://wow.gamepressure.com/gfx/big_maps/map_of_outland.jpg");
+    background-size: cover;
+    background-position: center;
 }
