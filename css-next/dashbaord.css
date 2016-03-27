@@ -24,12 +24,10 @@
     background: rgba(202, 255, 112, 0.6);
     color: white;
     padding: 30px;
-    margin: 50px auto;
-    width: fit-content;
     border-radius: 5px;
 }
 .dash-button:hover{
-    background: rgba(202,255,112,0.6);
+    background: rgba(202,255,112,0.8);
     color: white;
 }
 
