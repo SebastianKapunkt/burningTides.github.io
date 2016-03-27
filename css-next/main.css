@@ -34,7 +34,7 @@ hr {
     border-color: #444444;
 }
 
-h1{
+h1 {
     font-size: 30pt;
 }
 
@@ -51,16 +51,16 @@ h1{
     transform: translateZ(-20px) scale(23);
 }
 
-.text-uppercase{
+.text-uppercase {
     text-transform: uppercase;
 }
 
-.how2play-section, .road-section, .news-section, .features-section, .team-section{
+.how2play-section, .road-section, .news-section, .features-section, .team-section {
     background: rgba(20, 20, 20, 1);
     padding-top: 50px;
 }
 
-.how2play-section, .road-section, .news-section, .features-section{
+.how2play-section, .road-section, .news-section, .features-section {
     border-bottom: 8px solid yellowgreen;
 }
 
@@ -93,7 +93,7 @@ h1{
     color: #c9302c;
 }
 
-.container{
+.container {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;

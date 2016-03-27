@@ -40,7 +40,7 @@
         flex-flow: column;
     }
 
-    .server-news{
+    .server-news {
         margin: auto;
         width: auto;
     }
@@ -50,17 +50,17 @@
         width: auto;
     }
 
-    .how2play-section .container{
+    .how2play-section .container {
         flex-flow: column;
         flex-shrink: 0;
     }
 
-    .step{
+    .step {
         margin: 5px 0 5px 0;
         width: auto;
     }
 
-    .step-container{
+    .step-container {
         width: auto;
     }
 }

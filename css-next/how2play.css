@@ -1,58 +1,59 @@
-.how2play-section .container{
+.how2play-section .container {
     padding-bottom: 40px;
     display: flex;
     flex-flow: row wrap;
 }
-.step{
+
+.step {
     display: flex;
     flex-flow: column;
-    background: rgba(90,90,90,0.1);
+    background: rgba(90, 90, 90, 0.1);
     padding: 20px;
     text-align: left;
     margin: 5px;
     flex-grow: 1;
 }
 
-.step-title{
+.step-title {
     font-size: 20pt;
 }
 
-.step-content{
+.step-content {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
     padding-top: 10px;
 }
 
-.step:hover{
-    background: rgba(120,120,120,0.2);
+.step:hover {
+    background: rgba(120, 120, 120, 0.2);
 }
 
 .step-element {
     margin: 5px;
     padding: 30px;
-    background: rgba(90,90,90,0.1);
+    background: rgba(90, 90, 90, 0.1);
     font-size: 13pt;
     text-align: left;
 }
 
-.step-element a{
+.step-element a {
     color: greenyellow;
 }
 
-.step-element:hover{
-    background: rgba(120,120,120,0.3);
+.step-element:hover {
+    background: rgba(120, 120, 120, 0.3);
 }
 
-.step-element input{
+.step-element input {
     margin-left: 20px;
 }
 
-.how2play-submit{
+.how2play-submit {
     color: greenyellow;
 }
 
-.step-container{
+.step-container {
     flex-grow: 1;
     width: 400px;
     justify-content: flex-start;
@@ -61,7 +62,7 @@
     margin: 15px;
 }
 
-.how2play-footer{
+.how2play-footer {
     margin: auto;
     text-align: center;
     font-size: 20pt;

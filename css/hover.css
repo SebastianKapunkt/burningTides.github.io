@@ -11,7 +11,6 @@
  * Hover.css Copyright Ian Lunn 2014. Generated with Sass.
  */
 
-
 /* Underline From Left */
 .hvr-underline-from-left {
     display: inline-block;
@@ -25,6 +24,7 @@
     position: relative;
     overflow: hidden;
 }
+
 .hvr-underline-from-left:before {
     content: "";
     position: absolute;
@@ -41,6 +41,7 @@
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
 }
+
 .hvr-underline-from-left:hover:before, .hvr-underline-from-left:active:before {
     right: 0;
 }
