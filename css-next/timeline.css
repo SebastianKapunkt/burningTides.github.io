@@ -17,7 +17,7 @@
 
 .timeline-date {
     padding: 20px;
-    width: 80px;
+    flex-basis: 80px;
 }
 
 
