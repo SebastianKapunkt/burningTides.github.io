@@ -54,6 +54,7 @@
     .news-item {
         margin: auto;
         width: auto;
+        padding: 0;
     }
 
     .how2play-section .container {

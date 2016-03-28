@@ -23,4 +23,8 @@
     .step-element {
         padding: 30px 20px 30px 20px;
     }
+
+    .news-img{
+        width: 100%;
+    }
 }
