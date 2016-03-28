@@ -41,6 +41,10 @@
         flex-flow: column;
     }
 
+    .news-content{
+        flex-flow: column;
+    }
+
     .server-news {
         margin: auto;
         width: auto;

@@ -70,18 +70,19 @@
     margin: 5px;
     background: rgba(90, 90, 90, 0.1);
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row;
     padding: 10px;
 }
 
 .news-text {
     padding: 0 10px;
-    flex-grow: 5;
+    flex-grow: 1;
     text-align: left;
 }
 
 .news-img img {
-    width: 100%;
+    flex-grow: 1;
+    width: 300px;
     height: auto;
 }
 
