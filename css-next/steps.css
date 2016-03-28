@@ -5,6 +5,10 @@
     position: relative;
 }
 
+.timeline::-webkit-scrollbar {
+    display: none;
+}
+
 .entry {
     display: inline-block;
     vertical-align: top;
