@@ -1,8 +1,12 @@
+.dashboard-section .container{
+    flex-flow: column;
+}
+
 .dash-container {
     position: relative;
     background: rgba(0, 0, 0, 0.5);
     padding: 20px 50px;
-    margin-top: 90px;
+    margin: 90px auto;
     display: flex;
     flex-flow: column;
     justify-content: center;
