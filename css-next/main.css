@@ -61,7 +61,7 @@ h1 {
 }
 
 .how2play-section, .road-section, .news-section, .features-section {
-    border-bottom: 8px solid yellowgreen;
+    border-bottom: 0 solid yellowgreen;
 }
 
 .how2play-section {
@@ -73,12 +73,9 @@ h1 {
     text-align: center;
 }
 
-.road-section {
-    text-align: center;
-}
-
 .features-section {
     text-align: center;
+    padding-bottom: 50px;
 }
 
 .team-section {
@@ -97,5 +94,4 @@ h1 {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    padding: 0 90px;
 }
