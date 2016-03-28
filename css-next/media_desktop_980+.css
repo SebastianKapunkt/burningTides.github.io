@@ -23,8 +23,8 @@
         padding: 0;
     }
 
-    .how2play-section, .news-section, .team-section, .dashboard-section, .features-section, .road-section {
-        min-height: 100%;
+    .dashboard-section, .features-section{
+        height: 100%;
     }
 
     .dash-container {
