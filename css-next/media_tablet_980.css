@@ -43,6 +43,7 @@
 
     .news-content{
         flex-flow: column;
+        padding: 0;
     }
 
     .server-news {
