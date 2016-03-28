@@ -1,0 +1,56 @@
+.features-section .container {
+    display: flex;
+    flex-flow: column;
+}
+
+.timeline-section {
+    background: rgba(90, 90, 90, 0.1);
+    margin: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    width: 1000px;
+}
+
+.timeline-section:nth-child(4) {
+    background: rgba(20, 20, 20, 0.5);
+}
+
+.timeline-date {
+    padding: 20px;
+    width: 80px;
+}
+
+
+.timeline-title {
+    text-align: left;
+    font-size: 20pt;
+    padding: 20px 0 20px 20px;
+}
+
+.timeline-content {
+    padding: 20px 0 20px 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.timeline-content div {
+    padding: 5px;
+}
+
+.progression {
+    content: " ";
+    flex-basis: 20px;
+    flex-shrink: 0;
+    background: rgb a(0, 0, 0, 0.5);
+}
+
+.p-1 {
+    background: yellowgreen;
+}
+
+.p-2 {
+    background: yellowgreen;
+}
