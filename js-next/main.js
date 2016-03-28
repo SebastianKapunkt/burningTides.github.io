@@ -16,8 +16,8 @@ $(function () {
         $('html, body').stop().animate({
             scrollTop: $($anchor.attr('href')).offset().top
         }, 1000, 'easeInOutExpo');
-        // also close burger menu
         event.preventDefault();
+        // also close burger menu
         $(".fel-navbar").removeClass("collapsed-nav");
         isClicked = false;
     });
@@ -36,4 +36,6 @@ $(document).ready(function () {
     });
 });
 
-
+$('.img-holder').imageScroll({
+    speed: 0.1,
+});
