@@ -23,6 +23,7 @@
     -moz-osx-font-smoothing: grayscale;
     position: relative;
     overflow: hidden;
+    margin-top: -3px;
 }
 
 .hvr-underline-from-left:before {

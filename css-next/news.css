@@ -69,7 +69,7 @@
 .news-content {
     margin: 5px;
     display: flex;
-    flex-flow: row;
+    flex-flow: column;
     padding: 10px;
 }
 
@@ -81,7 +81,9 @@
 
 .news-img img {
     flex-grow: 1;
-    width: 300px;
+    min-width: 300px;
+    max-width: 500px;
     height: auto;
+    padding-bottom: 20px;
 }
 
