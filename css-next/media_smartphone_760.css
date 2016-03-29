@@ -25,6 +25,8 @@
     }
 
     .news-img{
-        width: 100%;
+        max-width: 300px;
+        width: 300px;
     }
+
 }
