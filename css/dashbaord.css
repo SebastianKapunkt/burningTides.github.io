@@ -1,92 +1,61 @@
-.colorBar {
-    top: 10px;
+.dashboard-section .container{
+    flex-flow: column;
+}
+
+.dash-container {
     position: relative;
-    height: 0.8em;
-    background: -webkit-linear-gradient(left top,
-    rgb(231, 82, 57) 0%,
-    rgb(231, 82, 57) 50%,
-    rgb(4, 156, 219) 50%,
-    rgb(4, 156, 219) 100%) repeat scroll 50% 0px transparent;
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25) inset;
-}
-
-.dashboard-section {
-    text-align: center;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px 50px;
+    margin: 90px auto;
     display: flex;
-    height: 100%;
+    flex-flow: column;
+    justify-content: center;
 }
 
-.custom-dashboard-container {
-    background: rgba(0, 0, 0, 0.3);
-    border: 1px solid rgba(20, 20, 20, 1);
-    width: 80%;
-    margin: auto;
+.dash-title {
+    font-size: 60pt;
+    text-align: center;
+    padding: 10px;
+}
+
+.dash-content {
+    font-size: 25pt;
+    text-align: center;
+}
+
+.dash-button {
+    font-size: 40pt;
+    background: rgba(202, 255, 112, 0.6);
+    color: white;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.dash-button:hover {
+    background: rgba(202, 255, 112, 0.8);
+    color: white;
+}
+
+.dash-footer {
+    font-size: 15pt;
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.footer-content {
+    display: flex;
+}
+
+.footer-content div {
+    padding: 20px;
 }
 
 .extra-links {
-    position: absolute;
-    right: 10%;
-    top: 70px;
+    position: inherit;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .extra-links a {
     padding: 10px;
 }
-
-@media all and (max-width: 1250px) {
-    .custom-dashboard-container {
-        margin-top: 150px;
-        flex-direction: column-reverse;
-    }
-
-    .dashboard-section {
-        height: auto;
-        padding-bottom: 80px;
-    }
-}
-
-/* Small screens */
-@media all and (max-width: 959px) {
-    .custom-dashboard-container {
-        width: 100%;
-    }
-
-    .extra-links {
-        right: 0;
-    }
-}
-
-.server-news {
-    flex-grow: 20;
-}
-
-.server-status {
-    margin: auto;
-    text-align: center;
-    flex-grow: 1;
-    height: 550px;
-    width: 300px;
-    display: flex;
-    padding: 20px;
-    flex-flow: column;
-    justify-content: flex-start;
-    background: rgba(0, 0, 0, 0.1);
-}
-
-.server-status div {
-    display: flex;
-    flex-flow: row;
-    width: 100%;
-}
-
-.server-status div div {
-    padding: 10px;
-}
-
-.server-status .text-right {
-    justify-content: flex-end;
-}
-

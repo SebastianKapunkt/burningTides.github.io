@@ -51,7 +51,7 @@
 
 .news-item {
     padding: 15px;
-    margin: 5px;
+    margin: auto;
 }
 
 .news-item:hover {

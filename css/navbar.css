@@ -1,43 +1,35 @@
+.arrow-up {
+    border-right: 3px solid;
+    border-top: 3px solid;
+    width: 16px;
+    height: 16px;
+    margin: 10px 0 0;
+    transform: rotate(-45deg);
+}
+
 .navbar-container {
-    background: rgba(0, 0, 0, 1);
+    background: rgba(0, 0, 0, 0.8);
     border: none;
     position: fixed;
     z-index: 1000;
     width: 100%;
-    display: flex;
-    flex-flow: row nowrap;
+    top: 0;
+    transition: all 0.5s;
 }
 
 .fel-navbar a {
     padding: 10px;
 }
 
-.fel-title {
-    text-transform: uppercase;
-    font-weight: 200;
-    font-size: 0;
-    padding: 5px 20px 0 20px;
-    background: none;
-    margin: auto;
-    transition: all 1s;
-}
-
-.logo {
-    width: 40px;
-    transition: all 1s;
-}
-
 /* Large */
 .fel-navbar {
     font-size: 20pt;
     font-weight: 300;
-
-    transition: all 0.8s ease-in-out;
-
     flex-grow: 100;
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start;
+    justify-content: center;
+    transition: all 0.5s;
 }
 
 #burger {
@@ -69,67 +61,7 @@
 }
 
 .collapsed-nav {
-    height: 250px !important;
-}
-
-@media all and (max-width: 1450px) {
-    .nav-scrolled-top .fel-navbar {
-        font-size: 20pt !important;
-    }
-}
-
-/* Medium screens */
-@media all and (min-width: 960px) {
-    .nav-scrolled-top {
-        background: none;
-    }
-
-    .nav-scrolled-top .fel-title {
-        display: flex;
-        position: fixed;
-        left: 10%;
-        transition: all 1s;
-    }
-
-    .nav-scrolled-top .fel-title div {
-        font-size: 50pt;
-        padding-right: 20px;
-        margin: auto;
-        background: none;
-        transition: all 1s;
-    }
-
-    .nav-scrolled-top .fel-navbar {
-        font-weight: 100;
-        position: fixed;
-        font-size: 40pt;
-        bottom: 30px;
-        left: 10%;
-        transition: all 1s;
-        display: flex;
-        flex-shrink: 0;
-        background: rgba(0, 0, 0, 0.3);
-    }
-
-    .nav-scrolled-top .logo {
-        width: 80px;
-        padding-top: 20px;
-        transition: all 1s;
-    }
-}
-
-/* Small screens */
-@media all and (max-width: 768px) {
-    .fel-navbar {
-        /* On small screens, we are no longer using row direction but column */
-        overflow: hidden;
-        height: 0;
-        padding-top: 50px;
-        flex-direction: column;
-        flex-flow: column;
-    }
-
-    #burger {
-        display: flex;
-    }
+    height: 259px !important;
+    transition: all 0.5s;
+    padding-top: 45px;
 }
