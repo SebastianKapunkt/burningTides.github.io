@@ -24,9 +24,9 @@
 }
 
 .s-2{
-    background-image: url("../assets/zangermarschen.png");
+    background-image: url("../assets/kara.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
 }
 .s-3{
     background-image: url("../assets/zulaman.jpg");
