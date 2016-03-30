@@ -1,4 +1,8 @@
 @media all and (max-width: 760px) {
+    body{
+        overflow-y: scroll;
+    }
+
     .fel-navbar {
         overflow: hidden;
         flex-direction: column;

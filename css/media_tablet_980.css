@@ -76,7 +76,20 @@
 
     .timeline-date {
         padding: 20px;
-        flex-basis: 50px;
+        flex-basis: 30px;
         flex-shrink: 0;
+    }
+
+    .news-item{
+        padding: 0;
+        margin: 0;
+    }
+
+    .news-title{
+        margin: 0;
+    }
+
+    #playpause{
+        display: none;
     }
 }
