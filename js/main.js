@@ -39,3 +39,22 @@ $(document).ready(function () {
 $('.img-holder').imageScroll({
     speed: 0.1,
 });
+
+var vid = document.getElementById("my-video");
+var isplaying = true;
+
+$(document).ready(function () {
+    $('#playpause').click(function (e) {
+      if(isplaying){
+            vid.pause();
+            $(".play-pause").removeClass("pause");
+            $(".play-pause").addClass("play");
+            isplaying = false;
+        }else{
+            vid.play();
+            $(".play-pause").removeClass("play");
+            $(".play-pause").addClass("pause");
+            isplaying = true;
+      }
+    });
+});
