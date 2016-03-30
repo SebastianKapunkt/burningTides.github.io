@@ -4,6 +4,11 @@
     justify-content: center;
 }
 
+.features-section .news-img img{
+  height: 200px;
+  width: auto;
+}
+
 .timeline-section {
     background: rgba(0, 0, 0, 0.5);
     margin: auto;
