@@ -55,9 +55,10 @@ h1 {
     text-transform: uppercase;
 }
 
-.how2play-section, .road-section, .news-section, .features-section, .team-section {
+.how2play-section, .road-section, .news-section, .features-section, .team-section, .timeline-section {
     background: rgba(20, 20, 20, 1);
     padding-top: 50px;
+    text-align: center;
 }
 
 .how2play-section, .road-section, .news-section, .features-section {
@@ -66,20 +67,11 @@ h1 {
 
 .how2play-section {
     padding-top: 40px;
-    text-align: center;
-}
-
-.news-section {
-    text-align: center;
 }
 
 .features-section {
     text-align: center;
     padding-bottom: 50px;
-}
-
-.team-section {
-    text-align: center;
 }
 
 .text-color-green {
