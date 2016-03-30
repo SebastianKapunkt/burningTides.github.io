@@ -73,4 +73,10 @@
     .timeline-part {
         width: 100%;
     }
+
+    .timeline-date {
+        padding: 20px;
+        flex-basis: 50px;
+        flex-shrink: 0;
+    }
 }
