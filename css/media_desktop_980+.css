@@ -6,7 +6,8 @@
     .nav-scrolled-top .fel-navbar {
         position: fixed;
         right: 20px;
-        top: 250px;
+        top: 50%;
+        margin-top: -150px;
 
         font-size: 2em;
         text-align: right;
@@ -25,10 +26,6 @@
 
     .dashboard-section{
         height: 100%;
-    }
-
-    .dash-container {
-        top: 50px;
     }
 
     .extra-links {
