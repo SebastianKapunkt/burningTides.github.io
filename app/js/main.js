@@ -58,8 +58,3 @@ $(document).ready(function () {
       }
     });
 });
-
-$('my-video').on('ended', function () {
-    this.load();
-    this.play();
-});
