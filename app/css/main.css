@@ -55,23 +55,14 @@ h1 {
     text-transform: uppercase;
 }
 
-.how2play-section, .road-section, .news-section, .features-section, .team-section, .timeline-section {
-    background: rgba(20, 20, 20, 1);
-    padding-top: 50px;
+.how2play-section, .news-section, .features-section, .team-section, .timeline-section {
+    background: rgba(10,10,10,0.98);
     text-align: center;
-}
-
-.how2play-section, .road-section, .news-section, .features-section {
-    border-bottom: 0 solid yellowgreen;
-}
-
-.how2play-section {
-    padding-top: 40px;
+    padding-bottom: 100px;
 }
 
 .features-section {
     text-align: center;
-    padding-bottom: 50px;
 }
 
 .text-color-green {
@@ -83,9 +74,12 @@ h1 {
 }
 
 .container {
-    display: flex;
-    flex-flow: row wrap;
+    background: rgba(20, 20, 20, 1);
+    width: 80%;
+    margin: auto;
+    display: block;
     justify-content: center;
+    padding: 20px;
 }
 
 .flex-column{

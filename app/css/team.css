@@ -2,9 +2,15 @@
     margin-bottom: 90px;
 }
 
+.team-container{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+}
+
 .team-member {
     background: rgba(90, 90, 90, 0.1);
-    margin: 15px;
+    margin: 20px auto;
     padding: 15px;
 }
 
