@@ -1,636 +1,673 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
 <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My AngularJS App</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="app/bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="app/bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="app/app.css">
+  <script src="app/bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <!-- CSS --->
 
-    <title>Burning Tides</title>
+  <!-- Navbar CSS -->
+  <link href="app/css/navbar.css" rel="stylesheet">
 
-    <!-- Navvar CSS -->
-    <link href="css/navbar.css" rel="stylesheet">
+  <!-- Main CSS -->
+  <link href="app/css/main.css" rel="stylesheet">
 
-    <!-- Main CSS -->
-    <link href="css/main.css" rel="stylesheet">
+  <!-- Dashboard CSS -->
+  <link href="app/css/dashbaord.css" rel="stylesheet">
 
-    <!-- Dashboard CSS -->
-    <link href="css/dashbaord.css" rel="stylesheet">
+  <!-- How2Play CSS -->
+  <link href="app/css/how2play.css" rel="stylesheet">
 
-    <!-- How2Play CSS -->
-    <link href="css/how2play.css" rel="stylesheet">
+  <!-- News CSS -->
+  <link href="app/css/news.css" rel="stylesheet">
 
-    <!-- News CSS -->
-    <link href="css/news.css" rel="stylesheet">
+  <!-- Team CSS -->
+  <link href="app/css/team.css" rel="stylesheet">
 
-    <!-- Team CSS -->
-    <link href="css/team.css" rel="stylesheet">
+  <!-- Background Video CSS -->
+  <link href="app/css/video.css" rel="stylesheet">
 
-    <!-- Background Video CSS -->
-    <link href="css/video.css" rel="stylesheet">
+  <!-- hover.cc -->
+  <link href="app/css/hover.css" rel="stylesheet">
 
-    <!-- hover.cc -->
-    <link href="css/hover.css" rel="stylesheet">
+  <!-- Steps.css -->
+  <link href="app/css/steps.css" rel="stylesheet">
 
-    <!-- Steps.css -->
-    <link href="css/steps.css" rel="stylesheet">
+  <!-- Timeline.css -->
+  <link href="app/css/timeline.css" rel="stylesheet">
 
-    <!-- Timeline.css -->
-    <link href="css/timeline.css" rel="stylesheet">
+  <!-- @Media CSS -->
+  <link href="app/css/media_desktop_980+.css" rel="stylesheet">
+  <link href="app/css/media_tablet_980.css" rel="stylesheet">
+  <link href="app/css/media_smartphone_760.css" rel="stylesheet">
 
-    <!-- @Media CSS -->
-    <link href="css/media_desktop_980+.css" rel="stylesheet">
-    <link href="css/media_tablet_980.css" rel="stylesheet">
-    <link href="css/media_smartphone_760.css" rel="stylesheet">
+  <!-- Google font -->
+  <link href='https://fonts.googleapis.com/css?family=Raleway:200' rel='stylesheet' type='text/css'>
 
-    <!-- Google font -->
-    <link href='https://fonts.googleapis.com/css?family=Raleway:200' rel='stylesheet' type='text/css'>
+  <!-- CSS -->
 
 </head>
 <body>
+    <!--
+  <ul class="menu">
+    <li><a href="#/view1">view1</a></li>
+    <li><a href="#/view2">view2</a></li>
+  </ul>
 
-<div class="navbar-container nav-scrolled-top">
+  <!--[if lt IE 7]>
+  <!--    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+    <!--
+  <div ng-view></div>
+
+  <!-- OLD VERSION NO ANGULAR INTEGRATION --->
+
+  <div class="navbar-container nav-scrolled-top">
     <div class="fel-navbar mylink">
-        <div id="burger">
-            <div></div>
+      <div id="burger">
+        <div></div>
+      </div>
+      <a class="page-scroll arrow-link" href="#dashboard">
+        <div class="arrow-up">
         </div>
-        <a class="page-scroll arrow-link" href="#dashboard">
-            <div class="arrow-up">
-            </div>
-        </a>
-        <div>
-            <a class="page-scroll hvr-underline-from-left"
-               href="#news">News</a>
-        </div>
-        <div>
-            <a class="page-scroll hvr-underline-from-left"
-               href="#how2play">How2Play</a>
-        </div>
-        <div>
-            <a class="page-scroll hvr-underline-from-left"
-               href="#friend">Recruit-a-friend</a>
-        </div>
-        <div>
-            <a class="page-scroll hvr-underline-from-left"
-               href="#features">Features</a>
-        </div>
-        <div>
-            <a class="page-scroll hvr-underline-from-left"
-               href="#timeline">Timeline</a>
-        </div>
-        <div>
-            <a class="page-scroll hvr-underline-from-left"
-               href="#team">Team</a>
-        </div>
+      </a>
+      <div>
+        <a class="page-scroll hvr-underline-from-left"
+           href="#news">News</a>
+      </div>
+      <div>
+        <a class="page-scroll hvr-underline-from-left"
+           href="#how2play">How2Play</a>
+      </div>
+      <div>
+        <a class="page-scroll hvr-underline-from-left"
+           href="#friend">Recruit-a-friend</a>
+      </div>
+      <div>
+        <a class="page-scroll hvr-underline-from-left"
+           href="#features">Features</a>
+      </div>
+      <div>
+        <a class="page-scroll hvr-underline-from-left"
+           href="#timeline">Timeline</a>
+      </div>
+      <div>
+        <a class="page-scroll hvr-underline-from-left"
+           href="#team">Team</a>
+      </div>
     </div>
-</div>
+  </div>
 
-<div class="fullscreen-bg">
-    <video id="my-video" loop muted autoplay poster="assets/zangermarschen.png" class="fullscreen-bg__video">
-        <source src="assets/background2.webm" type="video/webm">
+  <div class="fullscreen-bg">
+    <video id="my-video" loop muted autoplay poster="app/assets/zangermarschen.png" class="fullscreen-bg__video">
+      <source src="app/assets/background2.webm" type="video/webm">
     </video>
-</div>
-<a href="#" title="play/pause video" class="play-pause pause" id="playpause"></a>
+  </div>
+  <a href="#" title="play/pause video" class="play-pause pause" id="playpause"></a>
 
-<!-- Dashboard Section -->
-<section id="dashboard" class="dashboard-section">
+  <!-- Dashboard Section -->
+  <section id="dashboard" class="dashboard-section">
     <div class="hidden">
-        <a class="page-scroll" href="#dashboard"></a>
+      <a class="page-scroll" href="#dashboard"></a>
     </div>
     <div class="container">
-        <div class="dash-container">
-            <div class="dash-title">Burning Tides</div>
-            <div class="dash-content">
-                <div>FREE - WoW The Burning Crusade 2.4.3</div>
-                <div style="padding: 20px 0 20px 0; margin: auto; max-width: 340px;">
-                    <a href="#how2play" class="page-scroll">
-                        <div class="dash-button">PLAY NOW</div>
-                    </a>
-                </div>
-            </div>
-            <div class="dash-footer">
-                <div class="footer-content">
-                    <div>Server:</div>
-                    <div class="text-color-green">Online</div>
-                </div>
-                <div class="footer-content">
-                    <div>Realmlist:</div>
-                    <div>felcraft.github.io</div>
-                </div>
-            </div>
+      <div class="dash-container">
+        <div class="dash-title">Burning Tides</div>
+        <div class="dash-content">
+          <div>FREE - WoW The Burning Crusade 2.4.3</div>
+          <div style="padding: 20px 0 20px 0; margin: auto; max-width: 340px;">
+            <a href="#how2play" class="page-scroll">
+              <div class="dash-button">PLAY NOW</div>
+            </a>
+          </div>
         </div>
-        <div class="mylink text-right extra-links">
-            <a href="http://wow.pcamastral.com/forum/index.php" target="_blank"
-               class="hvr-underline-from-left">Forum</a>
-            <a href="http://wow.pcamastral.com/bugtracker/login_page.php?return=%2Fbugtracker%2Fview_all_bug_page.php"
-               class="hvr-underline-from-left" target="_blank">Bugtracker</a>
-            <a href="#" class="hvr-underline-from-left">Database</a>
-            <a href="#" class="hvr-underline-from-left">Addons</a>
-            <a href="http://calculators.iradei.eu/talents/" target="_blank" class="hvr-underline-from-left">Talents</a>
+        <div class="dash-footer">
+          <div class="footer-content">
+            <div>Server:</div>
+            <div class="text-color-green">Online</div>
+          </div>
+          <div class="footer-content">
+            <div>Realmlist:</div>
+            <div>felcraft.github.io</div>
+          </div>
         </div>
+      </div>
+      <div class="mylink text-right extra-links">
+        <a href="http://wow.pcamastral.com/forum/index.php" target="_blank"
+           class="hvr-underline-from-left">Forum</a>
+        <a href="http://wow.pcamastral.com/bugtracker/login_page.php?return=%2Fbugtracker%2Fview_all_bug_page.php"
+           class="hvr-underline-from-left" target="_blank">Bugtracker</a>
+        <a href="#" class="hvr-underline-from-left">Database</a>
+        <a href="#" class="hvr-underline-from-left">Addons</a>
+        <a href="http://calculators.iradei.eu/talents/" target="_blank" class="hvr-underline-from-left">Talents</a>
+      </div>
     </div>
-</section>
+  </section>
 
-<!-- News Section -->
-<section id="news" class="news-section">
+  <!-- News Section -->
+  <section id="news" class="news-section">
     <div class="hidden">
-        <a class="page-scroll" href="#news"></a>
+      <a class="page-scroll" href="#news"></a>
     </div>
     <h1>News</h1>
     <div class="container">
-        <div class="server-news">
-            <div class="news-item">
-                <div class="news-title">Open Beta</div>
-                <div class="news-content">
-                    <div class="news-text">
-                        Estimated start 20.04.2016<br>
-                        Estimated duration: 3 months
-                        <h3>What we offer</h3>
-                        <ul>
-                            <li>Instant lvl 60 for outland questing</li>
-                            <li>Instant lvl 70 with start gear for normal outland dungeons</li>
-                            <li>Instant lvl 70 with average gear for heroic outland dungeon</li>
-                            <li>Normal playthrough from level 1-70</li>
-                            <li>For selected and motivated groups of players: gear for tier 4 raids</li>
-                        </ul>
+      <div class="server-news">
+        <div class="news-item">
+          <div class="news-title">Open Beta</div>
+          <div class="news-content">
+            <div class="news-text">
+              Estimated start 20.04.2016<br>
+              Estimated duration: 3 months
+              <h3>What we offer</h3>
+              <ul>
+                <li>Instant lvl 60 for outland questing</li>
+                <li>Instant lvl 70 with start gear for normal outland dungeons</li>
+                <li>Instant lvl 70 with average gear for heroic outland dungeon</li>
+                <li>Normal playthrough from level 1-70</li>
+                <li>For selected and motivated groups of players: gear for tier 4 raids</li>
+              </ul>
 
-                        <h3>Goal of Beta</h3>
-                        <ul>
-                            <li>Focus on best possible outland content</li>
-                            <li>Almost authentic pre-nerf dungeons / raids until t5 content</li>
-                        </ul>
+              <h3>Goal of Beta</h3>
+              <ul>
+                <li>Focus on best possible outland content</li>
+                <li>Almost authentic pre-nerf dungeons / raids until t5 content</li>
+              </ul>
 
-                        We hope you will enjoy the open beta and will give us your feedback and report bugs at our
-                        <a href="http://wow.pcamastral.com/bugtracker/login_page.php?return=%2Fbugtracker%2Fview_all_bug_page.php"
-                           class="text-color-green hvr-underline-from-left" target="_blank">bugtracker</a>
-                        <br><br>
-                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/VmUGe8KDdGI"
-                                frameborder="0" allowfullscreen></iframe>
-                    </div>
-                </div>
+              We hope you will enjoy the open beta and will give us your feedback and report bugs at our
+              <a href="http://wow.pcamastral.com/bugtracker/login_page.php?return=%2Fbugtracker%2Fview_all_bug_page.php"
+                 class="text-color-green hvr-underline-from-left" target="_blank">bugtracker</a>
+              <br><br>
+              <iframe width="100%" height="315" src="https://www.youtube.com/embed/VmUGe8KDdGI"
+                      frameborder="0" allowfullscreen></iframe>
             </div>
-            <div class="news-item">
-                <!-- Gm Kleidung, Kreis, sitzen stehen bla -->
-                <a href="#" class="page-scroll">
-                    <div class="news-title">Recruitment</div>
-                    <div class="news-content">
-                        <div class="news-img">
-                            <img src="assets/gamemaster.jpg" alt="news">
-                        </div>
-                        <div class="news-text">
-                            We are always looking for energetic and motivated staff members for the Burning-Tides team,
-                            to give the players optimal support.<br>
-                            <br>
-                            <h3>We are looking for:</h3>
-                            <ul>
-                                <li>Community Manager - responsible for Forum / Announcements / Social Media</li>
-                                <li>Gamemaster - ingame support for players</li>
-                                <li>Developer - improving content / fixing bugs</li>
-                            </ul>
-                            <h4>Interested? <a href="#" class="text-color-green hvr-underline-from-left"> apply
-                                here! </a></h4>
-                        </div>
-                    </div>
-                </a>
-            </div>
+          </div>
         </div>
-        <!--
-        <div>
-            <div class="server-status">
-                <h2 class="text-center">Server Status</h2>
-                <hr noshade="">
-                <div class="text-center"> SET REALMLIST felcraft.github.io</div>
-                <hr noshade="">
-                <div>
-                    <div class="text-uppercase">Server Time</div>
-                    <div class="text-right server-time">12:30 PM</div>
-                </div>
-                <hr noshade="">
-                <div>
-                    <div class="">Login Server</div>
-                    <div class="text-right text-color-green text-uppercase login-server-status">online</div>
-                </div>
-                <hr noshade="">
-                <div>
-                    <div class="text-uppercase">Man'ari</div>
-                    <div class="text-right text-color-green text-uppercase realm-indicator">online</div>
-                </div>
-                <div>
-                    <div class="text-uppercase">Client</div>
-                    <div class="text-right">2.4.3</div>
-                </div>
-                <div>
-                    <div class="text-uppercase">Uptime</div>
-                    <div class="text-right server-uptime">22hours</div>
-                </div>
-                <div class="text-uppercase player-count"><br><br>513 Players online</div>
-                <div class="colorBar"></div>
+        <div class="news-item">
+          <!-- Gm Kleidung, Kreis, sitzen stehen bla -->
+          <a href="#" class="page-scroll">
+            <div class="news-title">Recruitment</div>
+            <div class="news-content">
+              <div class="news-img">
+                <img src="app/assets/gamemaster.jpg" alt="news">
+              </div>
+              <div class="news-text">
+                We are always looking for energetic and motivated staff members for the Burning-Tides team,
+                to give the players optimal support.<br>
+                <br>
+                <h3>We are looking for:</h3>
+                <ul>
+                  <li>Community Manager - responsible for Forum / Announcements / Social Media</li>
+                  <li>Gamemaster - ingame support for players</li>
+                  <li>Developer - improving content / fixing bugs</li>
+                </ul>
+                <h4>Interested? <a href="#" class="text-color-green hvr-underline-from-left"> apply
+                  here! </a></h4>
+              </div>
             </div>
-        </div>-->
+          </a>
+        </div>
+      </div>
+      <!--
+      <div>
+          <div class="server-status">
+              <h2 class="text-center">Server Status</h2>
+              <hr noshade="">
+              <div class="text-center"> SET REALMLIST felcraft.github.io</div>
+              <hr noshade="">
+              <div>
+                  <div class="text-uppercase">Server Time</div>
+                  <div class="text-right server-time">12:30 PM</div>
+              </div>
+              <hr noshade="">
+              <div>
+                  <div class="">Login Server</div>
+                  <div class="text-right text-color-green text-uppercase login-server-status">online</div>
+              </div>
+              <hr noshade="">
+              <div>
+                  <div class="text-uppercase">Man'ari</div>
+                  <div class="text-right text-color-green text-uppercase realm-indicator">online</div>
+              </div>
+              <div>
+                  <div class="text-uppercase">Client</div>
+                  <div class="text-right">2.4.3</div>
+              </div>
+              <div>
+                  <div class="text-uppercase">Uptime</div>
+                  <div class="text-right server-uptime">22hours</div>
+              </div>
+              <div class="text-uppercase player-count"><br><br>513 Players online</div>
+              <div class="colorBar"></div>
+          </div>
+      </div>-->
     </div>
-</section>
-<div class="spacer">
+  </section>
+  <div class="spacer">
     <div class="img-holder"
          data-image="assets/nagrand.jpg"
          data-cover-ratio="0.4">
     </div>
-</div>
+  </div>
 
-<!-- How2play Section -->
-<section id="how2play" class="how2play-section">
+  <!-- How2play Section -->
+  <section id="how2play" class="how2play-section">
     <div class="container">
-        <div class="step-container">
-            <h1>How2play</h1>
-            <div class="bar"></div>
-            <div class="timeline">
-                <div class="entry">
-                    <h1>Step 1: download</h1>
-                    <h2>tbc 2.4.3 client</h2>
-                    <div class="step-content">
-                        <div class="step-element">Windows >
-                            <a href="#" class="hvr-underline-from-left">*link missing*</a>
-                        </div>
-                        <div class="step-element">Mac >
-                            <a href="#" class="hvr-underline-from-left">*link missing*</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="entry">
-                    <h1>Step 2: create account</h1>
-                    <div class="step-content">
-                        <a href="http://wow.pcamastral.com/" target="_blank">
-                            <div class="step-element how2play-submit hvr-underline-from-left">
-                                go to account creation page
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="entry">
-                    <h1>Step 3: activate account</h1>
-                    <div class="step-content">
-                        <div class="step-element">
-                            check your e-mails.<br> open the e-mail <br>
-                            with activation link<br> and click it.
-                        </div>
-                    </div>
-                </div>
-                <div class="entry">
-                    <h1>Step 4: download finished</h1>
-                    <div class="step-content">
-                        <div class="step-element">
-                            if your download finished,<br> unpack the archive<br>
-                            run wow.exe and play!
-                        </div>
-                    </div>
-                </div>
+      <div class="step-container">
+        <h1>How2play</h1>
+        <div class="bar"></div>
+        <div class="timeline">
+          <div class="entry">
+            <h1>Step 1: download</h1>
+            <h2>tbc 2.4.3 client</h2>
+            <div class="step-content">
+              <div class="step-element">Windows >
+                <a href="#" class="hvr-underline-from-left">*link missing*</a>
+              </div>
+              <div class="step-element">Mac >
+                <a href="#" class="hvr-underline-from-left">*link missing*</a>
+              </div>
             </div>
-            <h1 id="friend">Recruit a friend</h1>
-            <div class="bar"></div>
-            <div class="timeline">
-                <div class="entry">
-                    <h1><p>What we offer</p></h1>
-                    <div class="step-content">
-                        <div class="step-element">Friend-to-friend summoning <br> makes it easy to travel together.
-                        </div>
-                        <div class="step-element">Bonus experience ensures <br> faster leveling.</div>
-                        <div class="step-element">Recruits can grant veteran extra <br> levels to help friends stick
-                            together.
-                        </div>
-                    </div>
+          </div>
+          <div class="entry">
+            <h1>Step 2: create account</h1>
+            <div class="step-content">
+              <a href="http://wow.pcamastral.com/" target="_blank">
+                <div class="step-element how2play-submit hvr-underline-from-left">
+                  go to account creation page
                 </div>
-                <div class="entry">
-                    <h1>Step 1: ask your friend for his username</h1>
-                    <div class="step-content">
+              </a>
+            </div>
+          </div>
+          <div class="entry">
+            <h1>Step 3: activate account</h1>
+            <div class="step-content">
+              <div class="step-element">
+                check your e-mails.<br> open the e-mail <br>
+                with activation link<br> and click it.
+              </div>
+            </div>
+          </div>
+          <div class="entry">
+            <h1>Step 4: download finished</h1>
+            <div class="step-content">
+              <div class="step-element">
+                if your download finished,<br> unpack the archive<br>
+                run wow.exe and play!
+              </div>
+            </div>
+          </div>
+        </div>
+        <h1 id="friend">Recruit a friend</h1>
+        <div class="bar"></div>
+        <div class="timeline">
+          <div class="entry">
+            <h1><p>What we offer</p></h1>
+            <div class="step-content">
+              <div class="step-element">Friend-to-friend summoning <br> makes it easy to travel together.
+              </div>
+              <div class="step-element">Bonus experience ensures <br> faster leveling.</div>
+              <div class="step-element">Recruits can grant veteran extra <br> levels to help friends stick
+                together.
+              </div>
+            </div>
+          </div>
+          <div class="entry">
+            <h1>Step 1: ask your friend for his username</h1>
+            <div class="step-content">
 
-                    </div>
-                </div>
-                <div class="entry">
-                    <h1>Step 2: create account with bonus code</h1>
-                    <div class="step-content">
-                        <div class="step-element">
-                            enter the username from step 1 <br>in bonus code field <br> at
-                            <a href="http://wow.pcamastral.com/" class="hvr-underline-from-left" target="_blank">
-                                account creation
-                            </a>
-                        </div>
-                    </div>
-                </div>
             </div>
+          </div>
+          <div class="entry">
+            <h1>Step 2: create account with bonus code</h1>
+            <div class="step-content">
+              <div class="step-element">
+                enter the username from step 1 <br>in bonus code field <br> at
+                <a href="http://wow.pcamastral.com/" class="hvr-underline-from-left" target="_blank">
+                  account creation
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="how2play-footer step-element">If you are still waiting for download - check out our
-            <a class="page-scroll hvr-underline-from-left" href="#features">
-                features
-            </a>!
-        </div>
+      </div>
+      <div class="how2play-footer step-element">If you are still waiting for download - check out our
+        <a class="page-scroll hvr-underline-from-left" href="#features">
+          features
+        </a>!
+      </div>
     </div>
-</section>
+  </section>
 
-<div class="img-holder"
-     data-image="assets/zulaman.jpg"
-     data-cover-ratio="0.4">
-</div>
+  <div class="img-holder"
+       data-image="assets/zulaman.jpg"
+       data-cover-ratio="0.4">
+  </div>
 
-<!-- Features Section -->
-<section id="features" class="features-section">
+  <!-- Features Section -->
+  <section id="features" class="features-section">
     <div class="hidden">
-        <a class="page-scroll" href="#timeline"></a>
+      <a class="page-scroll" href="#timeline"></a>
     </div>
     <h1>Features</h1>
     <div class="container">
-        <div class="news-item">
-            <div class="news-title">About the Server</div>
-            <div class="news-content">
-                <div class="news-text">
-                    We aim to deliver the most authentic experience
-                    <ul>
-                        <li>All rates x 1!</li>
-                        <li>Recruit-a-Friend ( 1 - 60 )
-                            <ul>
-                                <li>3x the experience while leveling with your friend!</li>
-                                <li>Summon your friend directly towards you!</li>
-                                <li>Grant levels to your friends</li>
-                            </ul>
-                        </li>
-                        <li>No item shop, voting system or any other kind of pay-to-win!</li>
-                        <li>Progressive content release</li>
-                    </ul>
-                </div>
-            </div>
+      <div class="news-item">
+        <div class="news-title">About the Server</div>
+        <div class="news-content">
+          <div class="news-text">
+            We aim to deliver the most authentic experience
+            <ul>
+              <li>All rates x 1!</li>
+              <li>Recruit-a-Friend ( 1 - 60 )
+                <ul>
+                  <li>3x the experience while leveling with your friend!</li>
+                  <li>Summon your friend directly towards you!</li>
+                  <li>Grant levels to your friends</li>
+                </ul>
+              </li>
+              <li>No item shop, voting system or any other kind of pay-to-win!</li>
+              <li>Progressive content release</li>
+            </ul>
+          </div>
         </div>
-        <div class="news-item">
-            <div class="news-title">Core</div>
-            <div class="news-content">
-                <div class="news-text">
-                    <ul>
-                        <li>Based on a previous Open Source of Hellground.</li>
-                        <li> As soon as we established a wealthy community we are planning to go open source</li>
-                    </ul>
-                </div>
-            </div>
+      </div>
+      <div class="news-item">
+        <div class="news-title">Core</div>
+        <div class="news-content">
+          <div class="news-text">
+            <ul>
+              <li>Based on a previous Open Source of Hellground.</li>
+              <li> As soon as we established a wealthy community we are planning to go open source</li>
+            </ul>
+          </div>
         </div>
-        <div class="news-item">
-            <div class="news-title">Poolingsystem</div>
-            <div class="news-content">
-                <div class="news-text">
-                    Already since Vanilla Wow Blizzard has integrated a pooling system. This uknown system,
-                    is even used in Molten Core. During AQ, Naxxramas and especially since TBC pools are used in
-                    dungeons and herbs.<br><br>
-                    But What ist this Pooling?<br>
-                    Pooling is best explained with an example. If two objects/NPCs are located in the same pool, there
-                    is a chance that either object/NPC X or Y is spawned. But never both at the same time!
-                    Here is an example of a Pool in Auchenai Crypts. Shown is the same Group but at two different IDs.
-                    <br><br>
-                    <div class="news-img">
-                        <img src="assets/pooling1.jpg" alt="pooling" style="width: 45%;">
-                        <img src="assets/pooling2.jpg" alt="pooling" style="width: 45%;">
-                    </div>
-                    We from Team Burning-Tides took great effort to integrate a funtioncal pooling system in every TBC
-                    dungeon, so the game experience don't differ from the originial Blizzard TBC.
-                    Furthermore we guarantee with a running Pooling System a variety during your daily dungeons.
-                </div>
+      </div>
+      <div class="news-item">
+        <div class="news-title">Poolingsystem</div>
+        <div class="news-content">
+          <div class="news-text">
+            Already since Vanilla Wow Blizzard has integrated a pooling system. This uknown system,
+            is even used in Molten Core. During AQ, Naxxramas and especially since TBC pools are used in
+            dungeons and herbs.<br><br>
+            But What ist this Pooling?<br>
+            Pooling is best explained with an example. If two objects/NPCs are located in the same pool, there
+            is a chance that either object/NPC X or Y is spawned. But never both at the same time!
+            Here is an example of a Pool in Auchenai Crypts. Shown is the same Group but at two different IDs.
+            <br><br>
+            <div class="news-img">
+              <img src="app/assets/pooling1.jpg" alt="pooling" style="width: 45%;">
+              <img src="app/assets/pooling2.jpg" alt="pooling" style="width: 45%;">
             </div>
+            We from Team Burning-Tides took great effort to integrate a funtioncal pooling system in every TBC
+            dungeon, so the game experience don't differ from the originial Blizzard TBC.
+            Furthermore we guarantee with a running Pooling System a variety during your daily dungeons.
+          </div>
         </div>
+      </div>
     </div>
-</section>
+  </section>
 
-<div class="img-holder"
-     data-image="assets/zulaman.jpg"
-     data-cover-ratio="0.4">
-</div>
+  <div class="img-holder"
+       data-image="assets/zulaman.jpg"
+       data-cover-ratio="0.4">
+  </div>
 
-<section id="timeline" class="timeline-section">
+  <section id="timeline" class="timeline-section">
     <div class="hidden">
-        <a class="page-scroll" href="#features"></a>
+      <a class="page-scroll" href="#features"></a>
     </div>
     <h1>Timeline</h1>
     <div class="container">
-        <div class="s-1">
-            <div class="timeline-part">
-                <div class="timeline-date">2016/4</div>
-                <div class="progression p-0"></div>
-                <div>
-                    <div class="timeline-title">Open Beta Testing</div>
-                    <div>
-                        <div class="timeline-content flex-row-wrap">
-                            <h3 style="width: 100%" class="text-color-green">Players versus Environment</h3>
-                            <div class="timeline-title">Dungeons</div>
-                            <div class="flex-column">
-                                <div>Hellfire Ramparts (59-62)</div>
-                                <div>The Blood Furnace (61-63)</div>
-                                <div>The Slave Pens (62-64)</div>
-                                <div>The Underbog (63-65)</div>
-                                <div>Mana-Tombs (64-66)</div>
-                                <div>Auchenai Crypts (65-67)</div>
-                                <div>Old Hillsbrad Foothills (66-68)</div>
-                                <div>Sethekk Halls (67-68)</div>
-                            </div>
-                            <div class="flex-column">
-                                <div>Shadow Labyrinth (67-70</div>
-                                <div>The Steamvault (67-70)</div>
-                                <div>The Shattered Halls (68-70)</div>
-                                <div>The Mechanar (68-70)</div>
-                                <div>The Botanica (68-70)</div>
-                                <div>The Arcatraz (68-70)</div>
-                                <div>The Black Morass (68-70)</div>
-                            </div>
-                        </div>
-                        <div class="timeline-content flex-row-wrap">
-                            <div class="timeline-title">Raids: Tier 4</div>
-                            <div class="flex-column">
-                                <div>Karazhan</div>
-                                <div>Gruuls Lair</div>
-                                <div>Magheridon's Lair</div>
-                            </div>
-                        </div>
-                        <div class="timeline-content flex-row-wrap">
-                            <h3 style="width: 100%" class="text-color-green">Players versus Players</h3>
-                            <div class="timeline-title">Battlegrounds</div>
-                            <div class="flex-column">
-                                <div>Warsong gulch</div>
-                                <div>Arathi Basin</div>
-                                <div>Eye of the Storm</div>
-                            </div>
-                        </div>
-                        <div class="timeline-content flex-row-wrap">
-                            <div class="timeline-title">Arena</div>
-                            <div class="flex-column">
-                                <div>Nagrand</div>
-                                <div>Blade's Edge</div>
-                                <div>Ruins of Lordaeron</div>
-                            </div>
-                        </div>
-                        <div class="timeline-content flex-row-wrap">
-                            <div class="timeline-title">Others</div>
-                            <div class="flex-column">
-                                <div>Testing Outland Leveling (60-70)</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="s-2">
-            <div class="timeline-part">
-                <div class="timeline-date">2016/5</div>
-                <div class="progression p-0"></div>
-                <div>
-                    <div class="timeline-title">Release</div>
-                    <div>
-                        <div class="timeline-content flex-row-wrap">
-                            <h3 style="width: 100%" class="text-color-green">Players versus Environment</h3>
-                            <div class="timeline-title">Dungeons</div>
-                            <div class="flex-column">
-                                <div>Hellfire Ramparts (59-62)</div>
-                                <div>The Blood Furnace (61-63)</div>
-                                <div>The Slave Pens (62-64)</div>
-                                <div>The Underbog (63-65)</div>
-                                <div>Mana-Tombs (64-66)</div>
-                                <div>Auchenai Crypts (65-67)</div>
-                                <div>Old Hillsbrad Foothills (66-68)</div>
-                                <div>Sethekk Halls (67-68)</div>
-                            </div>
-                            <div class="flex-column">
-                                <div>Shadow Labyrinth (67-70</div>
-                                <div>The Steamvault (67-70)</div>
-                                <div>The Shattered Halls (68-70)</div>
-                                <div>The Mechanar (68-70)</div>
-                                <div>The Botanica (68-70)</div>
-                                <div>The Arcatraz (68-70)</div>
-                                <div>The Black Morass (68-70)</div>
-                            </div>
-                        </div>
-                        <div class="timeline-content flex-row-wrap">
-                            <div class="timeline-title">Raids: Tier 4</div>
-                            <div class="flex-column">
-                                <div>Karazhan</div>
-                                <div>Gruuls Lair</div>
-                                <div>Magheridon's Lair</div>
-                            </div>
-                        </div>
-                        <div class="timeline-content flex-row-wrap">
-                            <h3 style="width: 100%" class="text-color-green">Players versus Players</h3>
-                            <div class="timeline-title">Battlegrounds</div>
-                            <div class="flex-column">
-                                <div>Warsong gulch</div>
-                                <div>Arathi Basin</div>
-                                <div>Eye of the Storm</div>
-                            </div>
-                        </div>
-                        <div class="timeline-content flex-row-wrap">
-                            <div class="timeline-title">Arena - Season One</div>
-                            <div class="flex-column">
-                                <div>Nagrand</div>
-                                <div>Blade's Edge</div>
-                                <div>Ruins of Lordaeron</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="s-3">
-            <div class="timeline-part">
-                <div class="timeline-date">2017/20/20</div>
-                <div class="progression p-0"></div>
-                <div>
-                    <div class="timeline-title">Later</div>
-                    <div class="timeline-content">
-                        <div>Sunnwell</div>
-                        <div>Blacktemple</div>
-                        <div>Karazahn</div>
-                    </div>
-                </div>
-            </div>
-        </div>
+      <div class="s-1">
         <div class="timeline-part">
-            <div class="timeline-date">2018/20/20</div>
-            <div class="progression p-0"></div>
+          <div class="timeline-date">2016/4</div>
+          <div class="progression p-0"></div>
+          <div>
+            <div class="timeline-title">Open Beta Testing</div>
             <div>
-                <div class="timeline-title">More Later</div>
-                <div class="timeline-content">
-                    <div>Sunnwell</div>
-                    <div>Blacktemple</div>
-                    <div>Karazahn</div>
+              <div class="timeline-content flex-row-wrap">
+                <h3 style="width: 100%" class="text-color-green">Players versus Environment</h3>
+                <div class="timeline-title">Dungeons</div>
+                <div class="flex-column">
+                  <div>Hellfire Ramparts (59-62)</div>
+                  <div>The Blood Furnace (61-63)</div>
+                  <div>The Slave Pens (62-64)</div>
+                  <div>The Underbog (63-65)</div>
+                  <div>Mana-Tombs (64-66)</div>
+                  <div>Auchenai Crypts (65-67)</div>
+                  <div>Old Hillsbrad Foothills (66-68)</div>
+                  <div>Sethekk Halls (67-68)</div>
                 </div>
+                <div class="flex-column">
+                  <div>Shadow Labyrinth (67-70</div>
+                  <div>The Steamvault (67-70)</div>
+                  <div>The Shattered Halls (68-70)</div>
+                  <div>The Mechanar (68-70)</div>
+                  <div>The Botanica (68-70)</div>
+                  <div>The Arcatraz (68-70)</div>
+                  <div>The Black Morass (68-70)</div>
+                </div>
+              </div>
+              <div class="timeline-content flex-row-wrap">
+                <div class="timeline-title">Raids: Tier 4</div>
+                <div class="flex-column">
+                  <div>Karazhan</div>
+                  <div>Gruuls Lair</div>
+                  <div>Magheridon's Lair</div>
+                </div>
+              </div>
+              <div class="timeline-content flex-row-wrap">
+                <h3 style="width: 100%" class="text-color-green">Players versus Players</h3>
+                <div class="timeline-title">Battlegrounds</div>
+                <div class="flex-column">
+                  <div>Warsong gulch</div>
+                  <div>Arathi Basin</div>
+                  <div>Eye of the Storm</div>
+                </div>
+              </div>
+              <div class="timeline-content flex-row-wrap">
+                <div class="timeline-title">Arena</div>
+                <div class="flex-column">
+                  <div>Nagrand</div>
+                  <div>Blade's Edge</div>
+                  <div>Ruins of Lordaeron</div>
+                </div>
+              </div>
+              <div class="timeline-content flex-row-wrap">
+                <div class="timeline-title">Others</div>
+                <div class="flex-column">
+                  <div>Testing Outland Leveling (60-70)</div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
+      <div class="s-2">
         <div class="timeline-part">
-            <div class="timeline-date">2019/20/20</div>
-            <div class="progression p-0"></div>
+          <div class="timeline-date">2016/5</div>
+          <div class="progression p-0"></div>
+          <div>
+            <div class="timeline-title">Release</div>
             <div>
-                <div class="timeline-title">Later Later</div>
-                <div class="timeline-content">
-                    <div>Sunnwell</div>
-                    <div>Blacktemple</div>
-                    <div>Karazahn</div>
+              <div class="timeline-content flex-row-wrap">
+                <h3 style="width: 100%" class="text-color-green">Players versus Environment</h3>
+                <div class="timeline-title">Dungeons</div>
+                <div class="flex-column">
+                  <div>Hellfire Ramparts (59-62)</div>
+                  <div>The Blood Furnace (61-63)</div>
+                  <div>The Slave Pens (62-64)</div>
+                  <div>The Underbog (63-65)</div>
+                  <div>Mana-Tombs (64-66)</div>
+                  <div>Auchenai Crypts (65-67)</div>
+                  <div>Old Hillsbrad Foothills (66-68)</div>
+                  <div>Sethekk Halls (67-68)</div>
                 </div>
+                <div class="flex-column">
+                  <div>Shadow Labyrinth (67-70</div>
+                  <div>The Steamvault (67-70)</div>
+                  <div>The Shattered Halls (68-70)</div>
+                  <div>The Mechanar (68-70)</div>
+                  <div>The Botanica (68-70)</div>
+                  <div>The Arcatraz (68-70)</div>
+                  <div>The Black Morass (68-70)</div>
+                </div>
+              </div>
+              <div class="timeline-content flex-row-wrap">
+                <div class="timeline-title">Raids: Tier 4</div>
+                <div class="flex-column">
+                  <div>Karazhan</div>
+                  <div>Gruuls Lair</div>
+                  <div>Magheridon's Lair</div>
+                </div>
+              </div>
+              <div class="timeline-content flex-row-wrap">
+                <h3 style="width: 100%" class="text-color-green">Players versus Players</h3>
+                <div class="timeline-title">Battlegrounds</div>
+                <div class="flex-column">
+                  <div>Warsong gulch</div>
+                  <div>Arathi Basin</div>
+                  <div>Eye of the Storm</div>
+                </div>
+              </div>
+              <div class="timeline-content flex-row-wrap">
+                <div class="timeline-title">Arena - Season One</div>
+                <div class="flex-column">
+                  <div>Nagrand</div>
+                  <div>Blade's Edge</div>
+                  <div>Ruins of Lordaeron</div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
+      <div class="s-3">
+        <div class="timeline-part">
+          <div class="timeline-date">2017/20/20</div>
+          <div class="progression p-0"></div>
+          <div>
+            <div class="timeline-title">Later</div>
+            <div class="timeline-content">
+              <div>Sunnwell</div>
+              <div>Blacktemple</div>
+              <div>Karazahn</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-part">
+        <div class="timeline-date">2018/20/20</div>
+        <div class="progression p-0"></div>
+        <div>
+          <div class="timeline-title">More Later</div>
+          <div class="timeline-content">
+            <div>Sunnwell</div>
+            <div>Blacktemple</div>
+            <div>Karazahn</div>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-part">
+        <div class="timeline-date">2019/20/20</div>
+        <div class="progression p-0"></div>
+        <div>
+          <div class="timeline-title">Later Later</div>
+          <div class="timeline-content">
+            <div>Sunnwell</div>
+            <div>Blacktemple</div>
+            <div>Karazahn</div>
+          </div>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
-<div class="img-holder"
-     data-image="assets/zangermarschen.png"
-     data-cover-ratio="0.4">
-</div>
-<!-- Team Section -->
-<section id="team" class="team-section">
+  <div class="img-holder"
+       data-image="assets/zangermarschen.png"
+       data-cover-ratio="0.4">
+  </div>
+  <!-- Team Section -->
+  <section id="team" class="team-section">
     <h1>Team</h1>
     <div class="container">
-        <div class="team-member">
-            <div class="member-image"><img src="assets/V_small.jpg" alt="member-image"></div>
-            <div class="member-name">Krullgor</div>
-            <div class="member-title">&#60;Super Server Administrator&#62;</div>
-            <div class="member-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
-            </div>
+      <div class="team-member">
+        <div class="member-image"><img src="app/assets/V_small.jpg" alt="member-image"></div>
+        <div class="member-name">Krullgor</div>
+        <div class="member-title">&#60;Super Server Administrator&#62;</div>
+        <div class="member-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+          tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
         </div>
-        <div class="team-member">
-            <div class="member-image"><img src="assets/V_small.jpg" alt="member-image"></div>
-            <div class="member-name">Ike</div>
-            <div class="member-title">&#60;Lead Programmer&#62;</div>
-            <div class="member-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
-            </div>
+      </div>
+      <div class="team-member">
+        <div class="member-image"><img src="app/assets/V_small.jpg" alt="member-image"></div>
+        <div class="member-name">Ike</div>
+        <div class="member-title">&#60;Lead Programmer&#62;</div>
+        <div class="member-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+          tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
         </div>
-        <div class="team-member">
-            <div class="member-image"><img src="http://puu.sh/nZtjb/133e859c14.jpg" alt="member-image"></div>
-            <div class="member-name">Isson</div>
-            <div class="member-title">&#60;Lead Gamemaster&#62;</div>
-            <div class="member-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
-            </div>
+      </div>
+      <div class="team-member">
+        <div class="member-image"><img src="http://puu.sh/nZtjb/133e859c14.jpg" alt="member-image"></div>
+        <div class="member-name">Isson</div>
+        <div class="member-title">&#60;Lead Gamemaster&#62;</div>
+        <div class="member-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+          tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
         </div>
-        <div class="team-member">
-            <div class="member-image"><img src="http://puu.sh/nCS70/98a632c8d6.jpg" alt="member-image"></div>
-            <div class="member-name">Kaesi</div>
-            <div class="member-title">&#60;Co Gamemaster&#62;</div>
-            <div class="member-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
-            </div>
+      </div>
+      <div class="team-member">
+        <div class="member-image"><img src="http://puu.sh/nCS70/98a632c8d6.jpg" alt="member-image"></div>
+        <div class="member-name">Kaesi</div>
+        <div class="member-title">&#60;Co Gamemaster&#62;</div>
+        <div class="member-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+          tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
         </div>
-        <div class="team-member">
-            <div class="member-image"><img src="assets/V_small.jpg" alt="member-image"></div>
-            <div class="member-name">Visores</div>
-            <div class="member-title">&#60;Web Administrator&#62;</div>
-            <div class="member-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
-            </div>
+      </div>
+      <div class="team-member">
+        <div class="member-image"><img src="app/assets/V_small.jpg" alt="member-image"></div>
+        <div class="member-name">Visores</div>
+        <div class="member-title">&#60;Web Administrator&#62;</div>
+        <div class="member-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+          tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
         </div>
+      </div>
     </div>
-</section>
+  </section>
 
-<!-- jQuery -->
-<script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <!-- jQuery -->
+  <script src="app/bower_components/jquery/dist/jquery.min.js"></script>
 
-<!-- Scrolling Nav JavaScript -->
-<script src="bower_components/jquery.easing/js/jquery.easing.min.js"></script>
-<script src="bower_components/Parallax-ImageScroll/jquery.imageScroll.min.js"></script>
-<script src="js/main.js"></script>
+  <!-- Scrolling Nav JavaScript -->
+  <script src="app/bower_components/jquery.easing/js/jquery.easing.min.js"></script>
+  <script src="app/bower_components/Parallax-ImageScroll/jquery.imageScroll.min.js"></script>
+  <script src="app/js/main.js"></script>
 
+
+
+  <!-- OLD VERSION NO ANGULAR INTEGRATION --->
+
+
+  <div>Angular seed app: v<span app-version></span></div>
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script src="app/bower_components/angular/angular.js"></script>
+  <script src="app/bower_components/angular-route/angular-route.js"></script>
+  <script src="app/app.js"></script>
+  <script src="app/view1/view1.js"></script>
+  <script src="app/view2/view2.js"></script>
+  <script src="app/components/version/version.js"></script>
+  <script src="app/components/version/version-directive.js"></script>
+  <script src="app/components/version/interpolate-filter.js"></script>
 </body>
-
 </html>
