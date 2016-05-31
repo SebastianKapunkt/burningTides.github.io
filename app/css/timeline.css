@@ -41,6 +41,14 @@
     background-position: center;
 }
 
+.s-6{
+    background-image: url("../assets/zulaman.jpg");
+    background-size: cover;
+    background-position: center;
+
+
+}
+
 
 .timeline-date {
     padding: 20px;
