@@ -1,6 +1,7 @@
 @media all and (min-width: 1200px) {
     .nav-scrolled-top {
         background: none;
+        border: none;
     }
 
     .nav-scrolled-top .fel-navbar {

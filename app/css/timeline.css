@@ -4,10 +4,6 @@
     justify-content: center;
 }
 
-.features-section .news-img img{
-
-}
-
 .timeline-part {
     background: rgba(0, 0, 0, 0.5);
     margin: auto;
@@ -15,6 +11,7 @@
     flex-flow: row nowrap;
     width: 1000px;
     text-align: left;
+    color: white;
 }
 
 .s-1{
@@ -31,8 +28,6 @@
     background-image: url("../assets/kara.jpg");
     background-size: cover;
     background-position: center;
-
-
 }
 
 .s-4{
@@ -51,16 +46,12 @@
     background-image: url("../assets/zulaman.jpg");
     background-size: cover;
     background-position: center;
-
-
 }
 
 .s-7{
     background-image: url("../assets/zangermarschen.png");
     background-size: cover;
     background-position: center;
-
-
 }
 
 .timeline-date {
@@ -68,7 +59,6 @@
     flex-basis: 90px;
     flex-shrink: 0;
 }
-
 
 .timeline-title {
     font-size: 20pt;

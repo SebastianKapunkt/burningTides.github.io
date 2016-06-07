@@ -1,7 +1,6 @@
 .how2play-section .container {
     display: flex;
     flex-flow: column;
-    padding: 10px;
 }
 
 .step {

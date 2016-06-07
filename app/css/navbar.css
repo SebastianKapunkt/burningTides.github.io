@@ -8,13 +8,17 @@
 }
 
 .navbar-container {
-    background: rgba(0, 0, 0, 1);
-    border: none;
+    background: rgba(25, 25, 25, 1);
     position: fixed;
     z-index: 1000;
-    width: 100%;
-    top: 0;
+    width: 70%;
+    top: 20px;
+    left: 0;
+    right: 0;
+    margin: auto;
     transition: all 0.5s;
+    border: 0.1em solid yellowgreen;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 .fel-navbar a {
@@ -61,7 +65,8 @@
 }
 
 .collapsed-nav {
-    height: 259px !important;
+    height: 325px !important;
     transition: all 0.5s;
     padding-top: 45px;
+    margin: 0;
 }
