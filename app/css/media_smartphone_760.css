@@ -33,4 +33,11 @@
         width: 300px;
     }
 
+    .news-content .content_object, .features-content{
+        width: auto;
+    }
+
+    .news-video{
+        width: 90%;
+    }
 }
