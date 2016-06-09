@@ -58,7 +58,8 @@ h1 {
 .how2play-section, .news-section, .features-section, .team-section, .timeline-section {
     background: rgba(25,25,25,1);
     text-align: center;
-    padding-bottom: 250px;
+    padding-top: 150px;
+    padding-bottom: 150px;
 }
 
 .features-section {
