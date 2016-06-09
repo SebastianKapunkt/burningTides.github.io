@@ -7,6 +7,7 @@
 <html lang="en" ng-app="burning_tides_app" class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
 <html lang="en" ng-app="burning_tides_app" class="no-js"> <!--<![endif]-->
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -46,6 +47,9 @@
     <!-- Steps.css -->
     <link href="app/css/steps.css" rel="stylesheet">
 
+    <!-- feature.css -->
+    <link href="app/css/feature.css" rel="stylesheet">
+
     <!-- Timeline.css -->
     <link href="app/css/timeline.css" rel="stylesheet">
 
@@ -58,6 +62,7 @@
     <link href='https://fonts.googleapis.com/css?family=Raleway:200' rel='stylesheet' type='text/css'>
 
 </head>
+
 <body>
 
 <div class="navbar-container nav-scrolled-top">
@@ -158,12 +163,12 @@
     <div class="hidden">
         <a class="page-scroll" href="#news"></a>
     </div>
-    <div class="container" id="news_title" ng-controller="TestFunction">
+    <div class="container" id="news_title" ng-controller="NewsController">
         <h1>News</h1>
         <a class="page-scroll" href="#news_title">
             <div class="server-news page-scroll" ng-init="selection = { selectedNode: null}">
-                <div class="news-item hvr-underline-from-left" ng-repeat="item in test_var"
-                     ng-init="setCurrentNews(test_var[0])" ng-click="setCurrentNews(item)"
+                <div class="news-item hvr-underline-from-left" ng-repeat="item in news"
+                     ng-init="setCurrentNews(news[0])" ng-click="setCurrentNews(item)"
                      ng-class="{'news-selected': selection.selectedNode == item}">
                     <div class="news-title">{{item.title}}</div>
                     <div class="news-prev">{{item.short}}</div>
@@ -283,10 +288,10 @@
     </div>
     <div class="container">
         <h1>Features</h1>
-        <div class="news-item">
-            <div class="news-title">About the Server</div>
-            <div class="news-content">
-                <div class="news-text">
+        <div class="features-item">
+            <div class="features-content">
+                <div class="features-title">About the Server</div>
+                <div class="features-text">
                     We aim to deliver the most authentic experience
                     <ul>
                         <li>All rates x 1!</li>
@@ -303,10 +308,10 @@
                 </div>
             </div>
         </div>
-        <div class="news-item">
-            <div class="news-title">Core</div>
-            <div class="news-content">
-                <div class="news-text">
+        <div class="features-item">
+            <div class="features-content">
+                <div class="features-title">Core</div>
+                <div class="features-text">
                     <ul>
                         <li>Based on a previous Open Source of Hellground.</li>
                         <li> As soon as we established a wealthy community we are planning to go open source</li>
@@ -314,10 +319,10 @@
                 </div>
             </div>
         </div>
-        <div class="news-item">
-            <div class="news-title">Poolingsystem</div>
-            <div class="news-content">
-                <div class="news-text">
+        <div class="features-item">
+            <div class="features-content">
+                <div class="features-title">Poolingsystem</div>
+                <div class="features-text">
                     Already since Vanilla Wow Blizzard has integrated a pooling system. This uknown system,
                     is even used in Molten Core. During AQ, Naxxramas and especially since TBC pools are used in
                     dungeons and herbs.<br><br>
@@ -326,7 +331,7 @@
                     is a chance that either object/NPC X or Y is spawned. But never both at the same time!
                     Here is an example of a Pool in Auchenai Crypts. Shown is the same Group but at two different IDs.
                     <br><br>
-                    <div class="news-img">
+                    <div class="features-img">
                         <img src="app/assets/pooling1.jpg" alt="pooling" style="width: 45%;">
                         <img src="app/assets/pooling2.jpg" alt="pooling" style="width: 45%;">
                     </div>
