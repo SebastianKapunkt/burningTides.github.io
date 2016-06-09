@@ -1,42 +1,12 @@
 [
   {
-    "title": "number 1",
-    "short": "den text in kurz :D",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nisi felis, semper et venenatis non, tempor a dui. Nulla at dapibus ipsum. Maecenas eleifend volutpat mi, vel euismod erat mattis vel. Suspendisse suscipit, eros at laoreet porttitor, dui felis tempor felis, vitae vestibulum tellus mi sed augue. Sed ac convallis ipsum. Morbi aliquet nulla eros, eu placerat erat ultricies dignissim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec cursus erat ut ipsum elementum, et sodales risus ultricies. Maecenas vitae tortor erat. Sed commodo tincidunt libero sit amet suscipit. Nulla sollicitudin ac dolor vitae consequat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam laoreet metus in lacinia tempus."
+    "title": "Open Beta",
+    "short": "Start and other information",
+    "content": "app/news_html/beta.html"
   },
   {
-    "title": "number 2",
-    "short": "den text in kurz :D",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nisi felis, semper et venenatis non, tempor a dui. Nulla at dapibus ipsum. Maecenas eleifend volutpat mi, vel euismod erat mattis vel. Suspendisse suscipit, eros at laoreet porttitor, dui felis tempor felis, vitae vestibulum tellus mi sed augue. Sed ac convallis ipsum. Morbi aliquet nulla eros, eu placerat erat ultricies dignissim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec cursus erat ut ipsum elementum, et sodales risus ultricies. Maecenas vitae tortor erat. Sed commodo tincidunt libero sit amet suscipit. Nulla sollicitudin ac dolor vitae consequat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam laoreet metus in lacinia tempus."
-  },
-  {
-    "title": "number 3",
-    "short": "den text in kurz :D",
-    "content": "Integer odio quam, bibendum eget blandit eu, aliquet ut velit. Praesent non tortor tincidunt, dapibus tortor et, mattis ante. Vivamus facilisis augue sed ligula vulputate venenatis sed at dolor. Donec sollicitudin venenatis ipsum in tristique. Mauris eget urna tincidunt, laoreet eros in, fermentum nisl. Mauris luctus ornare neque vitae finibus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut et massa sed quam varius euismod. Vivamus maximus arcu eu dolor imperdiet tristique ac non orci. Quisque finibus sapien vel faucibus tincidunt."
-  },
-  {
-    "title": "number 4",
-    "short": "den text in kurz :D",
-    "content": "Integer odio quam, bibendum eget blandit eu, aliquet ut velit. Praesent non tortor tincidunt, dapibus tortor et, mattis ante. Vivamus facilisis augue sed ligula vulputate venenatis sed at dolor. Donec sollicitudin venenatis ipsum in tristique. Mauris eget urna tincidunt, laoreet eros in, fermentum nisl. Mauris luctus ornare neque vitae finibus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut et massa sed quam varius euismod. Vivamus maximus arcu eu dolor imperdiet tristique ac non orci. Quisque finibus sapien vel faucibus tincidunt."
-  },
-  {
-    "title": "number 5",
-    "short": "den text in kurz :D",
-    "content": "Ut finibus quis dolor ac eleifend. Nunc ut arcu in eros congue egestas in ut ex. Pellentesque eget blandit nunc. Sed eu risus finibus est commodo elementum eu blandit lacus. Morbi a lobortis est. Duis ac scelerisque dui. Proin viverra elementum ex, tincidunt semper arcu laoreet in. Aliquam eleifend elit in metus dapibus consectetur. Curabitur volutpat eu tortor eu tincidunt."
-  },
-  {
-    "title": "number 6",
-    "short": "den text in kurz :D",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nisi felis, semper et venenatis non, tempor a dui. Nulla at dapibus ipsum. Maecenas eleifend volutpat mi, vel euismod erat mattis vel. Suspendisse suscipit, eros at laoreet porttitor, dui felis tempor felis, vitae vestibulum tellus mi sed augue. Sed ac convallis ipsum. Morbi aliquet nulla eros, eu placerat erat ultricies dignissim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec cursus erat ut ipsum elementum, et sodales risus ultricies. Maecenas vitae tortor erat. Sed commodo tincidunt libero sit amet suscipit. Nulla sollicitudin ac dolor vitae consequat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam laoreet metus in lacinia tempus."
-  },
-  {
-    "title": "number 6",
-    "short": "den text in kurz :D",
-    "content": "Sed non mattis enim, vitae vulputate metus. Duis lobortis, elit non luctus commodo, dui neque placerat velit, varius ultrices magna nulla sit amet mauris. Cras elit odio, sagittis at est sed, rutrum facilisis ipsum. Suspendisse pharetra eros quis convallis mollis. Quisque arcu purus, efficitur bibendum ultrices vel, faucibus et dui. Vivamus pulvinar, elit dictum condimentum lobortis, purus nunc pulvinar lectus, nec finibus dui dui eu augue. Maecenas ut bibendum lectus, in condimentum tellus. Proin urna tellus, malesuada sed laoreet vitae, semper ultrices lectus."
-  },
-  {
-    "title": "number 6",
-    "short": "den text in kurz :D",
-    "content": "Ut finibus quis dolor ac eleifend. Nunc ut arcu in eros congue egestas in ut ex. Pellentesque eget blandit nunc. Sed eu risus finibus est commodo elementum eu blandit lacus. Morbi a lobortis est. Duis ac scelerisque dui. Proin viverra elementum ex, tincidunt semper arcu laoreet in. Aliquam eleifend elit in metus dapibus consectetur. Curabitur volutpat eu tortor eu tincidunt."
+    "title": "Recruitment",
+    "short": "We want YOU!",
+    "content": "app/news_html/recruitment.html"
   }
 ]

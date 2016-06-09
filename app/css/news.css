@@ -8,13 +8,13 @@
 .server-news {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: flex-start;
     margin: 0;
     width: 100%;
 }
 
 .news-item {
-    padding: 5px;
+    padding: 15px;
     margin: 10px 10px;
     background: rgba(25, 25, 25, 1);
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
@@ -35,8 +35,8 @@
 }
 
 .news-title {
-    font-size: 20pt;
-    padding: 5px 0;
+    font-size: 25pt;
+    padding: 0;
     text-align: center;
 }
 
@@ -46,11 +46,22 @@
 }
 
 .news-content {
-    display: block;
+    display: flex;
+    flex-flow: column;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    margin: 5px;
-    padding: 5px;
     border: thin solid rgba(32,32,32,1);
+    padding: 30px;
+    margin: 10px;
+}
+
+.news-content .content_object{
+    margin: auto;
+    text-align: left;
+    width: 500px;
+}
+
+.news-content .news-title{
+    padding-bottom: 50px;
 }
 
 .news-text {
