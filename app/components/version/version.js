@@ -1,8 +1,8 @@
 'use strict';
 
 angular.module('myApp.version', [
-  'myApp.version.interpolate-filter',
-  'myApp.version.version-directive'
+  'burning_tides_app.version.interpolate-filter',
+  'burning_tides_app.version.version-directive'
 ])
 
 .value('version', '0.1');

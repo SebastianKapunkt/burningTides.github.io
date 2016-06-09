@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <!--[if lt IE 7]>
-<html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<html lang="en" ng-app="burning_tides_app" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>
-<html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<html lang="en" ng-app="burning_tides_app" class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>
-<html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<html lang="en" ng-app="burning_tides_app" class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<html lang="en" ng-app="burning_tides_app" class="no-js"> <!--<![endif]-->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,7 +15,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="app/bower_components/html5-boilerplate/dist/css/normalize.css">
     <link rel="stylesheet" href="app/bower_components/html5-boilerplate/dist/css/main.css">
-    <link rel="stylesheet" href="app/app.css">
     <script src="app/bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 
     <!-- CSS --->
@@ -57,8 +56,6 @@
 
     <!-- Google font -->
     <link href='https://fonts.googleapis.com/css?family=Raleway:200' rel='stylesheet' type='text/css'>
-
-    <!-- CSS -->
 
 </head>
 <body>
@@ -153,7 +150,6 @@
                 <div class="footer-content">
                     <div>Alliance:</div>
                     <div class="text-color-green">1000</div>
-
                 </div>
             </div>
 
@@ -175,64 +171,17 @@
     <div class="hidden">
         <a class="page-scroll" href="#news"></a>
     </div>
-    <div class="container">
+    <div class="container" ng-controller="TestFunction">
         <h1>News</h1>
-        <div class="server-news">
-            <div class="news-item">
-                <div class="news-title">Open Beta</div>
-                <div class="news-prev">Start and other information about beta</div>
-                <div class="news-content">
-                    <div class="news-text">
-                        Estimated start 20.04.2016<br>
-                        Estimated duration: 3 months
-                        <h3>What we offer</h3>
-                        <ul>
-                            <li>Instant lvl 60 for outland questing</li>
-                            <li>Instant lvl 70 with start gear for normal outland dungeons</li>
-                            <li>Instant lvl 70 with average gear for heroic outland dungeon</li>
-                            <li>Normal playthrough from level 1-70</li>
-                            <li>For selected and motivated groups of players: gear for tier 4 raids</li>
-                        </ul>
-
-                        <h3>Goal of Beta</h3>
-                        <ul>
-                            <li>Focus on best possible outland content</li>
-                            <li>Almost authentic pre-nerf dungeons / raids until t5 content</li>
-                        </ul>
-
-                        We hope you will enjoy the open beta and will give us your feedback and report bugs at our
-                        <a href="http://wow.pcamastral.com/bugtracker/login_page.php?return=%2Fbugtracker%2Fview_all_bug_page.php"
-                           class="text-color-green hvr-underline-from-left" target="_blank">bugtracker</a>
-                        <br><br>
-                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/VmUGe8KDdGI"
-                                frameborder="0" allowfullscreen></iframe>
-                    </div>
-                </div>
+        <div class="server-news" ng-init="selection = { selectedNode: null}">
+            <div class="news-item" ng-repeat="item in test_var" ng-init="setCurrentNews(test_var[0])" ng-click="setCurrentNews(item)" ng-class="{'news-selected': selection.selectedNode == item}">
+                <div class="news-title">{{item.title}}</div>
+                <div class="news-prev">{{item.short}}</div>
             </div>
-            <div class="news-item">
-                <!-- Gm Kleidung, Kreis, sitzen stehen bla -->
-                <a href="#" class="page-scroll">
-                    <div class="news-title">Recruitment</div>
-                    <div class="news-content">
-                        <div class="news-img">
-                            <img src="app/assets/gamemaster.jpg" alt="news">
-                        </div>
-                        <div class="news-text">
-                            We are always looking for energetic and motivated staff members for the Burning-Tides team,
-                            to give the players optimal support.<br>
-                            <br>
-                            <h3>We are looking for:</h3>
-                            <ul>
-                                <li>Community Manager - responsible for Forum / Announcements / Social Media</li>
-                                <li>Gamemaster - ingame support for players</li>
-                                <li>Developer - improving content / fixing bugs</li>
-                            </ul>
-                            <h4>Interested? <a href="#" class="text-color-green hvr-underline-from-left"> apply
-                                here! </a></h4>
-                        </div>
-                    </div>
-                </a>
-            </div>
+        </div>
+        <div class="news-content">
+            <div class="news-title">{{news_title}}</div>
+            {{news_content}}
         </div>
     </div>
 </section>
@@ -784,7 +733,7 @@
 -->
 <script src="app/bower_components/angular/angular.js"></script>
 <script src="app/bower_components/angular-route/angular-route.js"></script>
-<script src="app/app.js"></script>
+<script src="app/js/app.js"></script>
 <script src="app/view1/view1.js"></script>
 <script src="app/view2/view2.js"></script>
 <script src="app/components/version/version.js"></script>

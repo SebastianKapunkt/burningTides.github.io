@@ -1,7 +1,7 @@
 'use strict';
 
-describe('myApp.version module', function() {
-  beforeEach(module('myApp.version'));
+describe('burning_tides_app.version module', function() {
+  beforeEach(module('burning_tides_app.version'));
 
   describe('app-version directive', function() {
     it('should print current version', function() {

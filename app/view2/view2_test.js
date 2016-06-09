@@ -1,8 +1,8 @@
 'use strict';
 
-describe('myApp.view2 module', function() {
+describe('burning_tides_app.view2 module', function() {
 
-  beforeEach(module('myApp.view2'));
+  beforeEach(module('burning_tides_app.view2'));
 
   describe('view2 controller', function(){
 
