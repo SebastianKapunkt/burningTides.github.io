@@ -37,7 +37,7 @@ $(document).ready(function () {
 });
 
 $('.img-holder').imageScroll({
-    speed: 0.1,
+    speed: 0.1
 });
 
 var vid = document.getElementById("my-video");
@@ -45,16 +45,45 @@ var isplaying = true;
 
 $(document).ready(function () {
     $('#playpause').click(function (e) {
-      if(isplaying){
+        if (isplaying) {
             vid.pause();
             $(".play-pause").removeClass("pause");
             $(".play-pause").addClass("play");
             isplaying = false;
-        }else{
+        } else {
             vid.play();
             $(".play-pause").removeClass("play");
             $(".play-pause").addClass("pause");
             isplaying = true;
-      }
+        }
     });
+});
+
+var sections = $('section')
+    , nav = $('.fel-navbar')
+    , nav_height = nav.outerHeight();
+
+$(window).on('scroll', function () {
+    var cur_pos = $(this).scrollTop();
+
+    sections.each(function() {
+        var top = $(this).offset().top - nav_height,
+            bottom = top + $(this).outerHeight();
+
+        if (cur_pos >= top && cur_pos <= bottom) {
+            nav.find('a').removeClass('active');
+            nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
+        }
+    });
+});
+
+nav.find('a').on('click', function () {
+    var $el = $(this)
+        , id = $el.attr('href');
+
+    $('html, body').animate({
+        scrollTop: $(id).offset().top - nav_height
+    }, 500);
+
+    return false;
 });

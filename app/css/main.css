@@ -29,6 +29,10 @@ a, a:hover, a:focus, a:active {
     color: greenyellow;
 }
 
+.active{
+    background: rgba(202, 255, 112, 0.5);
+}
+
 hr {
     margin: 5px 0 5px 0;
     border-color: #444444;
