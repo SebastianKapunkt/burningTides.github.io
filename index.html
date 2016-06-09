@@ -171,14 +171,18 @@
     <div class="hidden">
         <a class="page-scroll" href="#news"></a>
     </div>
-    <div class="container" ng-controller="TestFunction">
+    <div class="container" id="news_title" ng-controller="TestFunction">
         <h1>News</h1>
-        <div class="server-news" ng-init="selection = { selectedNode: null}">
-            <div class="news-item" ng-repeat="item in test_var" ng-init="setCurrentNews(test_var[0])" ng-click="setCurrentNews(item)" ng-class="{'news-selected': selection.selectedNode == item}">
-                <div class="news-title">{{item.title}}</div>
-                <div class="news-prev">{{item.short}}</div>
+        <a class="page-scroll" href="#news_title">
+            <div class="server-news page-scroll" ng-init="selection = { selectedNode: null}">
+                <div class="news-item hvr-underline-from-left" ng-repeat="item in test_var"
+                     ng-init="setCurrentNews(test_var[0])" ng-click="setCurrentNews(item)"
+                     ng-class="{'news-selected': selection.selectedNode == item}">
+                    <div class="news-title">{{item.title}}</div>
+                    <div class="news-prev">{{item.short}}</div>
+                </div>
             </div>
-        </div>
+        </a>
         <div class="news-content">
             <div class="news-title">{{news_title}}</div>
             <div class="content_object" ng-include="news_content"></div>
