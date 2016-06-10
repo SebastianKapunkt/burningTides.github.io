@@ -14,15 +14,17 @@
 }
 
 .news-item {
+    position: relative;
+    left: 285px;
     padding: 15px;
-    margin: 0 10px;
+    margin: 0px;
     background: rgba(25, 25, 25, 1);
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     border: thin solid rgba(32,32,32,1);
 }
 
 .news-selected{
-    background: rgba(30, 30, 30, 1);
+    background: rgba(35, 35, 35, 1);
     border-bottom: 3px solid  rgba(202, 255, 112, 0.5);
 }
 
@@ -38,13 +40,17 @@
 }
 
 .news-content {
+    position: relative;
+    left: 285px;
     display: flex;
     flex-flow: column;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     border: thin solid rgba(32,32,32,1);
     padding: 30px;
-    margin: 0 10px;
-    background: rgba(30,30,30,1);
+    margin: 0px;
+    background: rgba(35,35,35,1);
+    width: 700px;
+
 }
 
 .news-content .content_object{
