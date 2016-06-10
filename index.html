@@ -165,19 +165,21 @@
     </div>
     <div class="container" id="news_title" ng-controller="NewsController">
         <h1>News</h1>
-        <a class="page-scroll" href="#news_title">
-            <div class="server-news page-scroll" ng-init="selection = { selectedNode: null}">
-                <div class="news-item hvr-underline-from-left" ng-repeat="item in news"
-                     ng-init="setCurrentNews(news[0])" ng-click="setCurrentNews(item)"
-                     ng-class="{'news-selected': selection.selectedNode == item}">
-                    <div class="news-title">{{item.title}}</div>
-                    <div class="news-prev">{{item.short}}</div>
-                </div>
+        <div class="server-news">
+            <div class="news-selector page-scroll" ng-init="selection = { selectedNode: null}">
+                <a class="page-scroll" href="#news_title">
+                    <div class="news-item hvr-underline-from-left" ng-repeat="item in news"
+                         ng-init="setCurrentNews(news[0])" ng-click="setCurrentNews(item)"
+                         ng-class="{'news-selected': selection.selectedNode == item}">
+                        <div class="news-title">{{item.title}}</div>
+                        <div class="news-prev">{{item.short}}</div>
+                    </div>
+                </a>
             </div>
-        </a>
-        <div class="news-content">
-            <div class="news-title">{{news_title}}</div>
-            <div class="content_object" ng-include="news_content"></div>
+            <div class="news-content">
+                <div class="news-title">{{news_title}}</div>
+                <div class="content_object" ng-include="news_content"></div>
+            </div>
         </div>
     </div>
 </section>

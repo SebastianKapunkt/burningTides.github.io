@@ -1,23 +1,17 @@
 .news-section .container {
     padding-top: 40px;
     padding-bottom: 40px;
-    display: block;
-    justify-content: center;
 }
 
 .server-news {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    margin: 0;
+    flex-flow: column;
+    justify-content: center;
     width: 100%;
 }
 
 .news-item {
-    position: relative;
-    left: 285px;
     padding: 15px;
-    margin: 0px;
     background: rgba(25, 25, 25, 1);
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     border: thin solid rgba(32,32,32,1);
@@ -26,6 +20,14 @@
 .news-selected{
     background: rgba(35, 35, 35, 1);
     border-bottom: 3px solid  rgba(202, 255, 112, 0.5);
+}
+
+.news-selector{
+    width: 760px;
+    margin: auto;
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
 }
 
 .news-title {
@@ -40,14 +42,12 @@
 }
 
 .news-content {
-    position: relative;
-    left: 285px;
     display: flex;
     flex-flow: column;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     border: thin solid rgba(32,32,32,1);
     padding: 30px;
-    margin: 0px;
+    margin: auto;
     background: rgba(35,35,35,1);
     width: 700px;
 
