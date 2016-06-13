@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Server Rates",
+    "text": "All rates <p>x 1</p>",
+    "img_url": "'app/assets/zangermarschen.png'"
+  },
+  {
+    "title": "No to Pay to Win",
+    "text": "No item shop <br><br>No votingpoint system <br><br>No other kind of pay-to-win!",
+    "img_url": "'app/assets/gamemaster.jpg'"
+  },
+  {
+    "title": "Server Progression",
+    "text": "Progressive content release",
+    "img_url": "'app/assets/zulaman.jpg'"
+  },
+  {
+    "title": "Referal Program",
+    "text": "Recruit-a-Friend ( 1 - 60 )<br><br>3x the experience while leveling with your friend!<br><br>Summon your friend directly towards you!<br><br>Grant levels to your friends",
+    "img_url": "'app/assets/nagrand.jpg'"
+  },
+  {
+    "title": "Server Core",
+    "text": "Based on a previous Open Source of Hellground.<br><br>As soon as we established a wealthy community we are planning to go open source",
+    "img_url": "'app/assets/kara.jpg'"
+  },
+  {
+    "title": "GM system",
+    "text": "Based on a previous Open Source of Hellground.<br><br>As soon as we established a wealthy community we are planning to go open source",
+    "img_url": "'app/assets/pooling1.jpg'"
+  }
+]

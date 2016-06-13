@@ -291,77 +291,19 @@
     <div class="container">
         <h1>Features</h1>
 
-        <div class="feature-highlight-container">
-            <div class="feature-highlight-box">
-                <div class="feature-highlight-headline-image"
-                     style="background-image: url('app/assets/zangermarschen.png')">
+        <div class="feature-highlight-container" ng-controller="FeatureController">
+            <div class="feature-highlight-box" ng-repeat="item in feature">
+                <div class="feature-highlight-headline-image" style="background-image: url({{item.img_url}})">
                     <div class="feature-highlight-headline">
-                        Server Rates
+                        {{item.title}}
                     </div>
                 </div>
                 <div class="feature-highlight-content">
-                    All rates <p>x 1</p>
-                </div>
-            </div>
-            <div class="feature-highlight-box">
-                <div class="feature-highlight-headline-image"
-                     style="background-image: url('app/assets/gamemaster.jpg')">
-                    <div class="feature-highlight-headline">
-                        No to Pay to Win
-                    </div>
-                </div>
-                <div class="feature-highlight-content">
-                    No item shop <br><br>
-                    No votingpoint system <br><br>
-                    No other kind of pay-to-win!
-                </div>
-            </div>
-            <div class="feature-highlight-box">
-                <div class="feature-highlight-headline-image" style="background-image: url('app/assets/zulaman.jpg')">
-                    <div class="feature-highlight-headline">
-                        Server Progression
-                    </div>
-
-                </div>
-                <div class="feature-highlight-content">
-                    Progressive content release
-                </div>
-            </div>
-            <div class="feature-highlight-box">
-                <div class="feature-highlight-headline-image" style="background-image: url('app/assets/nagrand.jpg')">
-                    <div class="feature-highlight-headline">
-                        Referal Program
-                    </div>
-                </div>
-                <div class="feature-highlight-content">
-                    Recruit-a-Friend ( 1 - 60 )<br><br>
-                    3x the experience while leveling with your friend!<br><br>
-                    Summon your friend directly towards you!<br><br>
-                    Grant levels to your friends
-                </div>
-            </div>
-            <div class="feature-highlight-box">
-                <div class="feature-highlight-headline-image" style="background-image: url('app/assets/kara.jpg')">
-                    <div class="feature-highlight-headline">
-                        Server Core
-                    </div>
-                </div>
-                <div class="feature-highlight-content">
-                    Based on a previous Open Source of Hellground.<br><br>
-                    As soon as we established a wealthy community we are planning to go open source</li>
-                </div>
-            </div>
-            <div class="feature-highlight-box">
-                <div class="feature-highlight-headline-image" style="background-image: url('app/assets/kara.jpg')">
-                    <div class="feature-highlight-headline">
-                        GM system
-                    </div>
-                </div>
-                <div class="feature-highlight-content">
-                    irgendein sinnloser text!
+                    <div ng-bind-html="item.text"></div>
                 </div>
             </div>
         </div>
+
 
         <div class="feature-item">
             <div class="feature-content">
@@ -386,6 +328,7 @@
             </div>
         </div>
     </div>
+
 </section>
 
 <div class="img-holder"
@@ -745,10 +688,8 @@
             <div class="team-member">
                 <div class="member-image"><img src="app/assets/V_small.jpg" alt="member-image"></div>
                 <div class="member-name">Visores</div>
-                <div class="member-title">&#60;Web Administrator&#62;</div>
-                <div class="member-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
-                    et
+                <div class="member-title">&#60;Lead Web Administrator&#62;</div>
+                <div class="member-text">Responsible for administrating all web content.
                 </div>
             </div>
         </div>
@@ -765,19 +706,15 @@
 <script src="app/js/main.js"></script>
 
 
-<!-- OLD VERSION NO ANGULAR INTEGRATION --->
-
-
 <!-- In production use:
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
 -->
 <script src="app/bower_components/angular/angular.js"></script>
 <script src="app/bower_components/angular-route/angular-route.js"></script>
 <script src="app/js/app.js"></script>
-<script src="app/view1/view1.js"></script>
-<script src="app/view2/view2.js"></script>
 <script src="app/components/version/version.js"></script>
 <script src="app/components/version/version-directive.js"></script>
 <script src="app/components/version/interpolate-filter.js"></script>
+<script src="app/bower_components/angular-sanitize/angular-sanitize.min.js"></script>
 </body>
 </html>
