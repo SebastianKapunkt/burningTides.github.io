@@ -10,3 +10,10 @@ name_space.controller("NewsController", ['$scope', '$http', function ($scope, $h
         $scope.selection.selectedNode = item;
     };
 }]);
+
+name_space.controller("FeatureController", ['$scope', '$http', function($scope, $http) {
+    $http.get('app/json/feature_data.json').success(function (data) {
+        $scope.feature = data;
+    });
+
+}]);
