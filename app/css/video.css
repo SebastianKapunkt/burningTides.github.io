@@ -21,13 +21,3 @@
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
-
-@media (max-width: 767px) {
-    .fullscreen-bg {
-        background: url('../assets/zangermarschen.png') center center / cover no-repeat;
-    }
-
-    .fullscreen-bg__video {
-        display: none;
-    }
-}

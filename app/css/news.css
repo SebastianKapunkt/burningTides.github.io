@@ -26,7 +26,7 @@
     width: 760px;
     margin: auto;
     display: flex;
-    flex-flow: row;
+    flex-flow: row nowrap;
     justify-content: flex-start;
 }
 
