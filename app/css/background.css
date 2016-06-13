@@ -11,10 +11,10 @@
     background: url("../assets/allianz.png");
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: left;
-    top: 75px;
+    background-position: left top;
+    top: 120px;
     left: 0;
-    width: 40%;
+    width: 14%;
     height: 80%;
 }
 
@@ -23,9 +23,9 @@
     background: url("../assets/horde.png");
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: right;
-    top: 115px;
+    background-position: right top;
+    top: 140px;
     right: 0;
-    width: 40%;
+    width: 14%;
     height: 80%;
 }
