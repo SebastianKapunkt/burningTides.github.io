@@ -33,7 +33,7 @@
         width: 300px;
     }
 
-    .news-content, .content_object, .features-content, .news-selector, .content_object{
+    .news-content, .content_object, .feature-content, .news-selector, .content_object{
         width: auto; !important;
     }
 
