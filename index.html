@@ -76,7 +76,7 @@
         </a>
         <div>
             <a class="page-scroll hvr-underline-from-left"
-               href="#news">News</a>
+               href="#features">Features</a>
         </div>
         <div>
             <a class="page-scroll hvr-underline-from-left"
@@ -88,7 +88,7 @@
         </div>
         <div>
             <a class="page-scroll hvr-underline-from-left"
-               href="#features">Features</a>
+               href="#news">News</a>
         </div>
         <div>
             <a class="page-scroll hvr-underline-from-left"
@@ -110,9 +110,6 @@
 
 <!-- Dashboard Section -->
 <section id="dashboard" class="dashboard-section">
-    <div class="hidden">
-        <a class="page-scroll" href="#dashboard"></a>
-    </div>
     <div class="container">
         <div class="dash-container">
             <div class="dash-title">Burning Tides</div>
@@ -158,34 +155,53 @@
     </div>
 </section>
 
-<!-- News Section -->
-<section id="news" class="news-section">
-    <div class="hidden">
-        <a class="page-scroll" href="#news"></a>
-    </div>
-    <div class="container" id="news_title" ng-controller="NewsController">
-        <h1>News</h1>
-        <div class="server-news">
-            <div class="news-selector page-scroll" ng-init="selection = { selectedNode: null}">
-                <a class="page-scroll" href="#news_title">
-                    <div class="news-item hvr-underline-from-left" ng-repeat="item in news"
-                         ng-init="setCurrentNews(news[0])" ng-click="setCurrentNews(item)"
-                         ng-class="{'news-selected': selection.selectedNode == item}">
-                        <div class="news-title">{{item.title}}</div>
-                        <div class="news-prev">{{item.short}}</div>
+<!-- Features Section -->
+<section id="features" class="features-section">
+    <div class="container">
+        <h1>Features</h1>
+
+        <div class="feature-highlight-container" ng-controller="FeatureController">
+            <div class="feature-highlight-box" ng-repeat="item in feature">
+                <div class="feature-highlight-headline-image" style="background-image: url({{item.img_url}})">
+                    <div class="feature-highlight-headline">
+                        {{item.title}}
                     </div>
-                </a>
+                </div>
+                <div class="feature-highlight-content">
+                    <div ng-bind-html="item.text"></div>
+                </div>
             </div>
-            <div class="news-content">
-                <div class="news-title">{{news_title}}</div>
-                <div class="content_object" ng-include="news_content"></div>
+        </div>
+
+
+        <div class="feature-item">
+            <div class="feature-content">
+                <div class="feature-title">Poolingsystem</div>
+                <div class="feature-text">
+                    Already since Vanilla Wow Blizzard has integrated a pooling system. This uknown system,
+                    is even used in Molten Core. During AQ, Naxxramas and especially since TBC pools are used in
+                    dungeons and herbs.<br><br>
+                    But What ist this Pooling?<br>
+                    Pooling is best explained with an example. If two objects/NPCs are located in the same pool, there
+                    is a chance that either object/NPC X or Y is spawned. But never both at the same time!
+                    Here is an example of a Pool in Auchenai Crypts. Shown is the same Group but at two different IDs.
+                    <br><br>
+                    <div class="feature-img">
+                        <img src="app/assets/pooling1.jpg" alt="pooling" style="width: 45%;">
+                        <img src="app/assets/pooling2.jpg" alt="pooling" style="width: 45%;">
+                    </div>
+                    We from Team Burning-Tides took great effort to integrate a funtioncal pooling system in every TBC
+                    dungeon, so the game experience don't differ from the originial Blizzard TBC.
+                    Furthermore we guarantee with a running Pooling System a variety during your daily dungeons.
+                </div>
             </div>
         </div>
     </div>
+
 </section>
 
 <div class="img-holder"
-     data-image="app/assets/nagrand.jpg"
+     data-image="app/assets/zulaman.jpg"
      data-cover-ratio="0.4">
 </div>
 
@@ -279,56 +295,31 @@
 </section>
 
 <div class="img-holder"
-     data-image="app/assets/zulaman.jpg"
+     data-image="app/assets/nagrand.jpg"
      data-cover-ratio="0.4">
 </div>
 
-<!-- Features Section -->
-<section id="features" class="features-section">
-    <div class="hidden">
-        <a class="page-scroll" href="#timeline"></a>
-    </div>
-    <div class="container">
-        <h1>Features</h1>
-
-        <div class="feature-highlight-container" ng-controller="FeatureController">
-            <div class="feature-highlight-box" ng-repeat="item in feature">
-                <div class="feature-highlight-headline-image" style="background-image: url({{item.img_url}})">
-                    <div class="feature-highlight-headline">
-                        {{item.title}}
+<!-- News Section -->
+<section id="news" class="news-section">
+    <div class="container" id="news_title" ng-controller="NewsController">
+        <h1>News</h1>
+        <div class="server-news">
+            <div class="news-selector page-scroll" ng-init="selection = { selectedNode: null}">
+                <a class="page-scroll" href="#news_title">
+                    <div class="news-item hvr-underline-from-left" ng-repeat="item in news"
+                         ng-init="setCurrentNews(news[0])" ng-click="setCurrentNews(item)"
+                         ng-class="{'news-selected': selection.selectedNode == item}">
+                        <div class="news-title">{{item.title}}</div>
+                        <div class="news-prev">{{item.short}}</div>
                     </div>
-                </div>
-                <div class="feature-highlight-content">
-                    <div ng-bind-html="item.text"></div>
-                </div>
+                </a>
             </div>
-        </div>
-
-
-        <div class="feature-item">
-            <div class="feature-content">
-                <div class="feature-title">Poolingsystem</div>
-                <div class="feature-text">
-                    Already since Vanilla Wow Blizzard has integrated a pooling system. This uknown system,
-                    is even used in Molten Core. During AQ, Naxxramas and especially since TBC pools are used in
-                    dungeons and herbs.<br><br>
-                    But What ist this Pooling?<br>
-                    Pooling is best explained with an example. If two objects/NPCs are located in the same pool, there
-                    is a chance that either object/NPC X or Y is spawned. But never both at the same time!
-                    Here is an example of a Pool in Auchenai Crypts. Shown is the same Group but at two different IDs.
-                    <br><br>
-                    <div class="feature-img">
-                        <img src="app/assets/pooling1.jpg" alt="pooling" style="width: 45%;">
-                        <img src="app/assets/pooling2.jpg" alt="pooling" style="width: 45%;">
-                    </div>
-                    We from Team Burning-Tides took great effort to integrate a funtioncal pooling system in every TBC
-                    dungeon, so the game experience don't differ from the originial Blizzard TBC.
-                    Furthermore we guarantee with a running Pooling System a variety during your daily dungeons.
-                </div>
+            <div class="news-content">
+                <div class="news-title">{{news_title}}</div>
+                <div class="content_object" ng-include="news_content"></div>
             </div>
         </div>
     </div>
-
 </section>
 
 <div class="img-holder"
@@ -337,15 +328,21 @@
 </div>
 
 <section id="timeline" class="timeline-section">
-    <div class="hidden">
-        <a class="page-scroll" href="#features"></a>
-    </div>
     <div class="container">
         <h1>Timeline</h1>
+        <div class="s-0">
+            <div class="timeline-part">
+                <div class="timeline-date">2016</div>
+                <div class="progression p-1"></div>
+                <div>
+                    <div class="timeline-title">Setup All</div>
+                </div>
+            </div>
+        </div>
         <div class="s-1">
             <div class="timeline-part">
                 <div class="timeline-date">2016/12</div>
-                <div class="progression p-1"></div>
+                <div class="progression p-0"></div>
                 <div>
                     <div class="timeline-title">Open Beta Testing - Part 1</div>
                     <div>
@@ -694,7 +691,6 @@
             </div>
         </div>
     </div>
-    <!--<div>Angular seed app: v<span app-version></span></div>-->
 </section>
 
 <!-- jQuery -->
