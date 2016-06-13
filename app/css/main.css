@@ -60,13 +60,9 @@ h1 {
 }
 
 .how2play-section, .news-section, .features-section, .team-section, .timeline-section {
-    background: rgba(15,15,15,1);
     text-align: center;
     padding-top: 150px;
     padding-bottom: 150px;
-    background-image: url("../assets/background_small.png");
-    background-repeat: repeat;
-    background-size: 300px;
 }
 
 .features-section {
