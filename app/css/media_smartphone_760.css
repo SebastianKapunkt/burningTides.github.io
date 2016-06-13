@@ -33,7 +33,12 @@
         width: 300px;
     }
 
-    .news-content, .content_object, .feature-content, .news-selector, .content_object{
+    .news-content,
+    .content_object,
+    .feature-content,
+    .news-selector,
+    .content_object,
+    .feature-highlight-container{
         width: auto; !important;
     }
 
