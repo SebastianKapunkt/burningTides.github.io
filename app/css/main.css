@@ -1,8 +1,7 @@
 body {
     height: 100%;
     width: 100%;
-    font-family: 'Cinzel', serif;
-    color: white;
+    font-family: 'Raleway', sans-serif;
     z-index: 2;
     margin: 0;
 }
@@ -16,10 +15,6 @@ div {
     border: 0 solid greenyellow;
 }
 
-a{
-    color: white;
-}
-
 a, a:hover, a:focus, a:active {
     text-decoration: none;
     transition: background-color 0.1s;
@@ -27,19 +22,7 @@ a, a:hover, a:focus, a:active {
 
 .mylink a:hover, .mylink a:active {
     text-decoration: none;
-    background-color: rgba(202, 255, 112, 0.5);
     transition: background-color 0.1s;
-    color: greenyellow;
-}
-
-.active{
-    background: rgba(202, 255, 112, 0.5);
-    color: yellowgreen;
-}
-
-hr {
-    margin: 5px 0 5px 0;
-    border-color: #444444;
 }
 
 h1 {
@@ -73,23 +56,12 @@ h1 {
     text-align: center;
 }
 
-.text-color-green {
-    color: yellowgreen;
-}
-
-.text-color-red {
-    color: yellowgreen;
-}
-
 .container {
-    background: rgba(25, 25, 25, 0.9);
     width: 70%;
     margin: auto;
     display: block;
     justify-content: center;
-    border-top: thin solid  rgba(202, 255, 112, 1);
     padding: 20px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 .flex-column{

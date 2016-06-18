@@ -12,11 +12,9 @@
 .entry {
     display: inline-block;
     vertical-align: top;
-    background: rgba(90, 90, 90, 0.1);
     padding: 10px;
     text-align: center;
     position: relative;
-    border-top: 4px solid yellowgreen;
     border-radius: 3px;
     margin: auto 10px;
     max-width: 400px;
@@ -36,7 +34,6 @@
     width: 7px;
     height: 7px;
     border-radius: 6px;
-    border: 3px solid yellowgreen;
     position: absolute;
     left: 50%;
     top: -30px;

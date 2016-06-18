@@ -1,0 +1,47 @@
+.timeline-part, .dashboard-section .container, .nav-scrolled-top a, .extra-links a, .dash-button, .feature-highlight-headline{
+    color: #f3f3f3;
+}
+
+.container, body, a {
+    color: lightgrey;
+}
+
+.step-element a, .how2play-submit, .mylink a:hover, .mylink a:active, .active, .text-color-green{
+    color: greenyellow;
+}
+
+.site-background, .entry{
+    background: rgb(25,25,25);
+}
+
+.feature-content, .feature-highlight-box, .how2play-footer, .container, .step-element, .navbar-container, .team-member{
+    background: rgb(35,35,35);
+}
+
+.dashboard-section .container{
+    background: rgba(0,0,0,0.1);
+}
+
+.dash-container, .feature-highlight-headline, .timeline-part{
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.dash-button:hover, .hvr-underline-from-left:before, .dash-button, .active, .mylink a:hover, .mylink a:active{
+    background: rgba(202, 255, 112, 0.6);
+}
+
+.team-member:hover, .step-element:hover{
+    background: rgba(120, 120, 120, 0.3);
+}
+
+.feature-content, .feature-highlight-box, .container, .navbar-container, .team-member{
+    box-shadow: 0 10px 20px rgba(25,25,25,0.19), 0 6px 6px rgba(25,25,25,0.23);
+}
+
+.feature-content, .feature-highlight-box, .container, .entry:after, .pause, .team-member{
+    border-top: 3px solid greenyellow;
+}
+
+.entry{
+    border-top: 4px solid greenyellow;
+}

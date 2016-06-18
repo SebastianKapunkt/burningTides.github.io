@@ -12,6 +12,7 @@
 
         font-size: 2em;
         text-align: right;
+        color: white;
 
         display: flex;
         flex-flow: column;

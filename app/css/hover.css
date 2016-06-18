@@ -33,7 +33,6 @@
     left: 0;
     right: 100%;
     bottom: 0;
-    background: rgba(202, 255, 112, 0.5);
     height: 3px;
     -webkit-transition-property: right;
     transition-property: right;

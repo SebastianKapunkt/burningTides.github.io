@@ -5,13 +5,11 @@
 }
 
 .timeline-part {
-    background: rgba(0, 0, 0, 0.5);
     margin: auto;
     display: flex;
     flex-flow: row nowrap;
     width: 1000px;
     text-align: left;
-    color: white;
 }
 
 .s-1{
@@ -91,7 +89,6 @@
     content: " ";
     flex-basis: 20px;
     flex-shrink: 0;
-    background: rgb a(0, 0, 0, 0.5);
 }
 
 .p-1 {
