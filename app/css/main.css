@@ -1,7 +1,7 @@
 body {
     height: 100%;
     width: 100%;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Cinzel', serif;
     color: white;
     z-index: 2;
     margin: 0;
@@ -16,9 +16,12 @@ div {
     border: 0 solid greenyellow;
 }
 
+a{
+    color: white;
+}
+
 a, a:hover, a:focus, a:active {
     text-decoration: none;
-    color: white;
     transition: background-color 0.1s;
 }
 
@@ -31,6 +34,7 @@ a, a:hover, a:focus, a:active {
 
 .active{
     background: rgba(202, 255, 112, 0.5);
+    color: yellowgreen;
 }
 
 hr {
