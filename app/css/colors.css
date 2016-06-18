@@ -38,7 +38,7 @@
     box-shadow: 0 10px 20px rgba(25,25,25,0.19), 0 6px 6px rgba(25,25,25,0.23);
 }
 
-.feature-content, .feature-highlight-box, .container, .entry:after, .pause, .team-member{
+.feature-content, .feature-highlight-box, .container, .entry:after, .team-member{
     border-top: 3px solid greenyellow;
 }
 
