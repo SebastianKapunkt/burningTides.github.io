@@ -15,18 +15,18 @@
     "img_url": "'app/assets/zulaman.jpg'"
   },
   {
-    "title": "Referal Program",
+    "title": "Referral Program",
     "text": "Recruit-a-Friend ( 1 - 60 )<br><br>3x the experience while leveling with your friend!<br><br>Summon your friend directly towards you!<br><br>Grant levels to your friends",
     "img_url": "'app/assets/nagrand.jpg'"
   },
   {
     "title": "Server Core",
-    "text": "Based on a previous Open Source of Hellground.<br><br>As soon as we established a wealthy community we are planning to go open source",
+    "text": "Based on Trinity Core. <br><br>Backported to Patch 2.4.3.",
     "img_url": "'app/assets/kara.jpg'"
   },
   {
-    "title": "GM system",
-    "text": "Based on a previous Open Source of Hellground.<br><br>As soon as we established a wealthy community we are planning to go open source",
+    "title": "Dynamic Respawns",
+    "text": "Depending on Player population, the respawn timer varies. <br><br> -video link-",
     "img_url": "'app/assets/pooling1.jpg'"
   }
 ]
