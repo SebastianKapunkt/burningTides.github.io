@@ -19,6 +19,16 @@
     padding: 30px;
     margin: 10px;
     width: 250px;
+}
+
+.client input{
+    padding: 10px;
+    margin: 5px;
+    color: black;
+}
+
+.client a {
+    padding-top: 25px;
     color: greenyellow;
 }
 
