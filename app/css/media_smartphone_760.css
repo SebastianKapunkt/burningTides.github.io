@@ -33,6 +33,7 @@
     .feature-content,
     .news-selector,
     .content_object,
+    .play-container,
     .feature-highlight-container{
         width: auto; !important;
     }

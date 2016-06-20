@@ -31,12 +31,6 @@
     text-align: left;
 }
 
-.features-img img {
-    flex-grow: 1;
-    height: auto;
-    width: 100%;
-    padding-bottom: 20px;
-}
 
 .feature-highlight-container{
     display: flex;
@@ -64,4 +58,5 @@
 .feature-highlight-headline-image{
     background-size: cover;
     margin-top: 4px;
+    overflow: hidden;
 }

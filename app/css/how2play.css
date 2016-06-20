@@ -3,6 +3,26 @@
     flex-flow: column;
 }
 
+.play-container{
+    width: 700px;
+    margin: 20px auto;
+    padding: 30px;
+}
+
+.client-row{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.client{
+    padding: 30px;
+    margin: 10px;
+    width: 250px;
+    color: greenyellow;
+}
+
+
 .step-title {
     font-size: 20pt;
 }

@@ -29,6 +29,10 @@ h1 {
     font-size: 30pt;
 }
 
+hr{
+    border-color: yellowgreen;
+}
+
 .background-image {
     width: 100%;
     position: fixed;

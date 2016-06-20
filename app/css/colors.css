@@ -14,8 +14,12 @@
     background: rgb(25,25,25);
 }
 
-.feature-content, .feature-highlight-box, .how2play-footer, .container, .step-element, .navbar-container, .team-member{
+.how2play-footer, .container, .step-element, .navbar-container, .team-member, .client{
     background: rgb(35,35,35);
+}
+
+.feature-highlight-box, .feature-content, .play-container{
+    background: rgb(50,50,50);
 }
 
 .dashboard-section .container{
@@ -34,12 +38,12 @@
     background: rgba(120, 120, 120, 0.3);
 }
 
-.feature-content, .feature-highlight-box, .container, .navbar-container, .team-member{
+.feature-content, .feature-highlight-box, .container, .navbar-container, .team-member, .play-container{
     box-shadow: 0 10px 20px rgba(25,25,25,0.19), 0 6px 6px rgba(25,25,25,0.23);
 }
 
-.feature-content, .feature-highlight-box, .container, .entry:after, .team-member{
-    border-top: 3px solid greenyellow;
+.feature-content, .feature-highlight-box, .container, .entry:after, .team-member, .play-container{
+    border-top: 2px solid greenyellow;
 }
 
 .entry{
