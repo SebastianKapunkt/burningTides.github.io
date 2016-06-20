@@ -27,9 +27,12 @@
     color: black;
 }
 
-.client a {
-    padding-top: 25px;
+.play-container a {
     color: greenyellow;
+}
+
+.client a{
+    padding-top: 25px;
 }
 
 
