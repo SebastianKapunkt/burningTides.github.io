@@ -24,16 +24,13 @@
         font-size: 20pt;
     }
 
-    .step-element {
-        padding: 30px 20px 30px 20px;
-    }
-
     .news-content,
     .content_object,
     .feature-content,
     .news-selector,
     .content_object,
     .play-container,
+    .p
     .feature-highlight-container{
         width: auto; !important;
     }
