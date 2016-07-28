@@ -1,4 +1,9 @@
-.timeline-part, .dashboard-section .container, .nav-scrolled-top a, .extra-links a, .dash-button, .feature-highlight-headline{
+.timeline-part,
+.dashboard-section .container,
+.nav-scrolled-top a,
+.extra-links a,
+.dash-button,
+.feature-highlight-headline {
     color: #f3f3f3;
 }
 
@@ -6,46 +11,52 @@
     color: lightgrey;
 }
 
-.step-element a, .how2play-submit, .mylink a:hover, .mylink a:active, .active, .text-color-green{
+.step-element a, .how2play-submit, .mylink a:hover, .mylink a:active, .active, .text-color-green {
     color: greenyellow;
 }
 
-.site-background, .entry{
-    background: rgb(25,25,25);
+.site-background,
+.entry{
+    background: rgb(25, 25, 25);
 }
 
-.how2play-footer, .container, .step-element, .navbar-container, .team-member, .client{
-    background: rgb(35,35,35);
+.how2play-footer,
+.step-element,
+.team-member,
+.client,
+.how2play-section .container,
+.news-section .container,
+.features-section .container,
+.team-section .container,
+.timeline-section .container,
+.fel-navbar{
+    background: rgb(35, 35, 35);
 }
 
-.feature-highlight-box, .feature-content, .play-container{
-    background: rgb(50,50,50);
+.feature-highlight-box, .feature-content, .play-container {
+    background: rgb(50, 50, 50);
 }
 
-.dashboard-section .container{
-    background: rgba(0,0,0,0.1);
-}
-
-.dash-container, .feature-highlight-headline, .timeline-part{
+.dash-container, .feature-highlight-headline, .timeline-part, .navbar-container {
     background: rgba(0, 0, 0, 0.5);
 }
 
-.dash-button:hover, .hvr-underline-from-left:before, .dash-button, .active, .mylink a:hover, .mylink a:active{
+.dash-button:hover, .hvr-underline-from-left:before, .dash-button, .active, .mylink a:hover, .mylink a:active {
     background: rgba(202, 255, 112, 0.6);
 }
 
-.team-member:hover, .step-element:hover{
+.team-member:hover, .step-element:hover {
     background: rgba(120, 120, 120, 0.3);
 }
 
-.feature-content, .feature-highlight-box, .container, .navbar-container, .team-member, .play-container{
-    box-shadow: 0 10px 20px rgba(25,25,25,0.19), 0 6px 6px rgba(25,25,25,0.23);
+.feature-content, .feature-highlight-box, .team-member, .play-container {
+    box-shadow: 0 10px 20px rgba(25, 25, 25, 0.19), 0 6px 6px rgba(25, 25, 25, 0.23);
 }
 
-.feature-content, .feature-highlight-box, .container, .entry:after, .team-member, .play-container{
+.feature-content, .feature-highlight-box, .container, .entry:after, .team-member, .play-container {
     border-top: 2px solid greenyellow;
 }
 
-.entry{
+.entry {
     border-top: 4px solid greenyellow;
 }

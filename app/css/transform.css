@@ -1,0 +1,12 @@
+#main{
+    width: 100%;
+    transition: all 0.5s;
+}
+
+.transform-main{
+    transform: translate(-300px,0);
+}
+
+.collapsed-nav {
+    transform: translate(-300px,0);
+}

@@ -1,45 +1,10 @@
 @media all and (max-width: 760px) {
-    .fel-navbar {
-        overflow: hidden;
-        flex-direction: column;
-        flex-flow: column;
-        height: 0;
-        transition: all 1s;
-        justify-content: flex-end;
+    div {
+        padding: 0;
+        margin: 0;
     }
 
-    .navbar-container{
-        width: 100%;
-    }
-
-    .fel-navbar a {
-        width: 100%;
-    }
-
-    #burger {
-        display: flex !important;
-    }
-
-    .dash-button {
-        font-size: 20pt;
-    }
-
-    .news-content,
-    .content_object,
-    .feature-content,
-    .news-selector,
-    .content_object,
-    .play-container,
-    .p
-    .feature-highlight-container{
-        width: auto; !important;
-    }
-    
-    .feature-highlight-container{
-        justify-content: center;
-    }
-
-    .news-video{
-        width: 90%;
+    .container{
+        padding: 0;
     }
 }
