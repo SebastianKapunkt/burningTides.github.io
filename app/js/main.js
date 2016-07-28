@@ -7,7 +7,6 @@ $(document).ready(function () {
     $('#nav-icon1').click(function (e) {
         $("#nav-icon1").toggleClass('open');
         $(".fel-navbar").toggleClass("collapsed-nav");
-        $(".main-for-transform").toggleClass("transform-main");
     });
 });
 
