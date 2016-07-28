@@ -12,6 +12,7 @@
 }
 
 .fel-navbar {
+    overflow-x: scroll;
     padding: 20px;
     font-size: 20pt;
     width: 100%;
