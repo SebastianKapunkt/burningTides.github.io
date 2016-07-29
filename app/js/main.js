@@ -65,6 +65,6 @@ nav.find('a').on('click', function () {
 (function () {
     // I only want to redirect iPhones, Android phones and a handful of 7" devices
     if (isMobile.apple.phone || isMobile.android.phone || isMobile.seven_inch) {
-        $('.play-pause').addClass('.hide');
+        $('.play-pause').addClass("hide");
     }
 })();
