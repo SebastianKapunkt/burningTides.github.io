@@ -8,7 +8,7 @@
     margin: auto;
     display: flex;
     flex-flow: row nowrap;
-    width: 1000px;
+    width: 100%;
     text-align: left;
 }
 

@@ -4,12 +4,11 @@
 }
 
 .play-container{
-    width: 700px;
-    margin: 20px auto;
-    padding: 30px;
+    margin: 20px 20px;
 }
 
 .client-row{
+    maring: 20px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -17,7 +16,7 @@
 
 .client{
     padding: 30px;
-    margin: 10px;
+    margin: 20px;
     width: 250px;
 }
 
