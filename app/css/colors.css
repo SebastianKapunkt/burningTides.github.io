@@ -36,9 +36,12 @@
     background: rgb(50, 50, 50);
 }
 
-.dash-container,
 .feature-highlight-headline,
-.timeline-part,
+.timeline-part{
+    background: rgba(0,0,0, 0.4);
+}
+
+.dash-container,
 .fel-navbar{
     background: rgba(0, 0, 0, 0.7);
 }
