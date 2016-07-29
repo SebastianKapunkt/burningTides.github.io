@@ -1,19 +1,21 @@
-.dashboard-section .container {
-    flex-flow: column;
-    border: 0;
+.dashboard-section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
 }
 
-.dashboard-section{
-    min-height: 100%;
+.dashboard-section .container {
+    flex-flow: column;
+    margin: auto;
 }
 
 .dash-container {
-    padding: 50px;
     width: auto;
     margin: auto;
     display: flex;
     flex-flow: column;
     justify-content: center;
+    padding: 20px;
 }
 
 .dash-title {

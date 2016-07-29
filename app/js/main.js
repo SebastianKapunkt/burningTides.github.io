@@ -1,7 +1,3 @@
-var isClicked = false;
-
-//jQuery for page scrolling feature - requires jQuery Easing plugin
-
 // burger collapse, by adding and removing css class
 $(document).ready(function () {
     $('#nav-icon1').click(function (e) {

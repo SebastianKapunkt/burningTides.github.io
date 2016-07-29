@@ -42,7 +42,11 @@ hr{
     text-transform: uppercase;
 }
 
-.how2play-section, .news-section, .features-section, .team-section, .timeline-section {
+.how2play-section,
+.news-section,
+.features-section,
+.team-section,
+.timeline-section {
     text-align: center;
     padding-top: 100px;
     padding-bottom: 100px;
@@ -51,7 +55,7 @@ hr{
 
 .features-section {
     text-align: center;
-    margin-top: 60px;
+    margin-top: 50px;
 }
 
 .container {
@@ -60,7 +64,6 @@ hr{
     margin: auto;
     display: block;
     justify-content: center;
-    padding: 20px;
 }
 
 .flex-column{
