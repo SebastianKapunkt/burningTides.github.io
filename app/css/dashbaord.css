@@ -1,5 +1,5 @@
 .dashboard-section{
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
 }
@@ -74,4 +74,8 @@
     border-top: none;
     border-bottom: none;
     margin: 8px 0 0 11px;
+}
+
+.hide{
+    display: none;
 }
