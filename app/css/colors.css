@@ -28,8 +28,7 @@
 .news-section .container,
 .features-section .container,
 .team-section .container,
-.timeline-section .container,
-.fel-navbar{
+.timeline-section .container{
     background: rgb(35, 35, 35);
 }
 
@@ -37,11 +36,20 @@
     background: rgb(50, 50, 50);
 }
 
-.dash-container, .feature-highlight-headline, .timeline-part, .navbar-container {
-    background: rgba(0, 0, 0, 0.5);
+.dash-container,
+.feature-highlight-headline,
+.timeline-part,
+.fel-navbar{
+    background: rgba(0, 0, 0, 0.7);
+    filter: blur(5px)
 }
 
-.dash-button:hover, .hvr-underline-from-left:before, .dash-button, .active, .mylink a:hover, .mylink a:active {
+.dash-button:hover,
+.hvr-underline-from-left:before,
+.dash-button,
+.active,
+.mylink a:hover,
+.mylink a:active {
     background: rgba(202, 255, 112, 0.6);
 }
 
