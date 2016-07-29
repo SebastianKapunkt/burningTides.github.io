@@ -64,7 +64,7 @@ nav.find('a').on('click', function () {
 // My own arbitrary use of isMobile, as an example
 (function () {
     // I only want to redirect iPhones, Android phones and a handful of 7" devices
-    if (isMobile.apple.phone || isMobile.android.phone || isMobile.seven_inch) {
+    if (isMobile.apple.phone || isMobile.android.phone) {
         $('.play-pause').addClass("hide");
     }
 })();
