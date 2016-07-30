@@ -5,6 +5,7 @@ body {
     z-index: 2;
     margin: 0;
     transition: all 0.5s;
+    overflow-x: hidden;
 }
 
 html {
@@ -13,7 +14,7 @@ html {
 }
 
 div {
-    border: 0px solid greenyellow;
+    border: 0 solid greenyellow;
 }
 
 a, a:hover, a:focus, a:active {
