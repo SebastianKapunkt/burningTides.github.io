@@ -13,7 +13,7 @@ html {
 }
 
 div {
-    border: 0 solid greenyellow;
+    border: 0px solid greenyellow;
 }
 
 a, a:hover, a:focus, a:active {
@@ -35,7 +35,10 @@ hr{
 }
 
 #main{
+    margin: 0;
+    padding: 0;
     width: 100vw;
+    height: 100vh;
 }
 
 .text-uppercase {

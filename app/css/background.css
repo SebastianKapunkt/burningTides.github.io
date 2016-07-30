@@ -13,8 +13,8 @@
     background-position: left top;
     top: 120px;
     left: 0;
-    width: 14%;
-    height: 80%;
+    width: 14vw;
+    height: 80vh;
 }
 
 .right-side{
@@ -23,8 +23,8 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right top;
-    top: 140px;
+    top: 120px;
     right: 0;
-    width: 14%;
-    height: 80%;
+    width: 14vw;
+    height: 80vh;
 }
