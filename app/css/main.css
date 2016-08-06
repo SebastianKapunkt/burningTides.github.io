@@ -2,7 +2,6 @@ body {
     height: 100%;
     width: 100%;
     font-family: 'Raleway', sans-serif;
-    z-index: 2;
     margin: 0;
     transition: all 0.5s;
     overflow-x: hidden;
@@ -40,6 +39,7 @@ hr{
     padding: 0;
     width: 100vw;
     height: 100vh;
+    z-index: 8;
 }
 
 .text-uppercase {
@@ -52,8 +52,8 @@ hr{
 .team-section,
 .timeline-section {
     text-align: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     width: 100%;
 }
 
@@ -63,6 +63,7 @@ hr{
 }
 
 .container {
+    z-index: 8;
     max-width: 800px;
     width: 100%;
     margin: auto;

@@ -29,7 +29,6 @@
 .hvr-underline-from-left:before {
     content: "";
     position: absolute;
-    z-index: -1;
     left: 0;
     right: 100%;
     bottom: 0;

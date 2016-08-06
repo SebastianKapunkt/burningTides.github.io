@@ -4,11 +4,12 @@
     width: 300px;
     height: 100%;
     right: -300px;
-    z-index: 10000;
+    z-index: 9;
 }
 
 .fel-navbar a {
-    padding: 10px;
+    padding: 5px;
+    margin: 3px;
 }
 
 .fel-navbar {
