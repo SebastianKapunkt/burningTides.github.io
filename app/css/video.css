@@ -1,17 +1,14 @@
 .fullscreen-bg {
     position: absolute;
-    width: auto;
-    height: auto;
-    top: 50%;
-    left: 50%;
-    min-height: 100vh;
-    min-width: 100vw;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     overflow: hidden;
-    z-index: -1;
-    transform: translateX(-50%) translateY(-50%);
+    z-index: -100;
 }
 
-.fullscreen-bg-video {
+.fullscreen-bg__video {
     display: flex;
     position: relative;
     margin: auto;

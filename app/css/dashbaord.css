@@ -63,7 +63,6 @@
     border-color: transparent transparent transparent yellowgreen;
     border-width: 10px 10px 10px 12px;
     margin: 8px 0 0 11px;
-    z-index: 11;
 }
 
 .pause {
@@ -75,7 +74,6 @@
     border-top: none;
     border-bottom: none;
     margin: 8px 0 0 11px;
-    z-index: 11;
 }
 
 .hide{
