@@ -30,9 +30,22 @@
 }
 
 .dash-button {
-    font-size: 40pt;
-    padding: 25px;
-    border-radius: 5px;
+    padding: 10px;
+    border-radius: 500px;
+    color: rgb(116,210,67);
+    font-size: 35pt;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    background: rgba(20,20,20,0.8);
+    border: thin solid greenyellow;
+    /*background-image: url("http://i699.photobucket.com/albums/vv356/Valkyria99/Screen%20Shot%202015-08-08%20at%201.16.48%20PM_zpshvsegztr.png");*/
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.dash-button:hover{
+    background: rgba(30,60,30,0.9);
 }
 
 .dash-footer {

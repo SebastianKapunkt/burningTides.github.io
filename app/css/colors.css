@@ -12,7 +12,7 @@
 }
 
 .step-element a, .how2play-submit, .mylink a:hover, .mylink a:active, .active, .text-color-green {
-    color: greenyellow;
+    color: rgb(116,210,67);
 }
 
 .site-background,
@@ -46,13 +46,13 @@
     background: rgba(0, 0, 0, 0.7);
 }
 
-.dash-button:hover,
+/*.dash-button:hover,*/
 .hvr-underline-from-left:before,
-.dash-button,
+/*.dash-button,*/
 .active,
 .mylink a:hover,
 .mylink a:active {
-    background: rgba(202, 255, 112, 0.6);
+    background: rgba(116,210,67,0.6);
 }
 
 .team-member:hover, .step-element:hover {
@@ -64,9 +64,9 @@
 }
 
 .feature-content, .feature-highlight-box, .container, .entry:after, .team-member, .play-container {
-    border-top: 2px solid greenyellow;
+    border-top: 2px solid rgb(116,210,67);
 }
 
 .entry {
-    border-top: 4px solid greenyellow;
+    border-top: 4px solid rgb(116,210,67);
 }
