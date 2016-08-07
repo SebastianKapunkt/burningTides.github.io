@@ -1,13 +1,11 @@
 .features-section .container {
     padding-top: 40px;
-    padding-bottom: 40px;
     display: flex;
     flex-flow: column;
     justify-content: center;
 }
 
-
-.feature-highlight-container{
+.feature-highlight-container {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -15,7 +13,7 @@
     margin: auto;
 }
 
-.feature-highlight-box{
+.feature-highlight-box {
     width: 246px;
     margin: 5px;
 }
@@ -26,18 +24,19 @@
     height: 90px;
 }
 
-.feature-highlight-content{
+.feature-highlight-content {
     padding: 10px 15px;
     margin-top: 20px;
 }
-.feature-highlight-headline-image{
+
+.feature-highlight-headline-image {
     background-size: cover;
     margin-top: 4px;
     overflow: hidden;
 }
 
-.feature-item{
-    margin: 25px;
+.feature-item {
+    margin-top: 20px;
 }
 
 .feature-title {
@@ -50,11 +49,10 @@
     width: 100%;
     display: flex;
     flex-flow: column;
-    margin: auto;
 }
 
 .feature-text {
-    padding: 0 10px;
+    margin: 10px;
     flex-grow: 1;
     text-align: left;
 }
